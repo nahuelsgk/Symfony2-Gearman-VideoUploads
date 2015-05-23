@@ -1,0 +1,473 @@
+[
+  {
+    "id": 1,
+    "home": [
+      {
+        "hash": "#ALESSOFOR<strong>212</strong>VIP",
+        "string": "Descubra a experiência interactiva de Alesso.<br/>Siga as personagens e participe em nosso videoclipe colaborativo através do carregamento de um vídeo de 5 segundos. Você pode ganhar uma viagem exclusiva e conhecer Alesso como um verdadeiro VIP."
+      },
+      {
+        "stringMobile": "#ALESSOFOR<span><strong>212</strong>VIP</span>"
+      },
+      {
+        "stringMobile": "Siga as personagens e participe em nosso videoclipe colaborativo através do carregamento de um vídeo de 5 segundos.<br/>Você pode ganhar uma viagem exclusiva e conhecer Alesso."
+      },
+      {
+        "stringMobile": "Participe já"
+      },
+      {
+        "stringMobile": "Veja o videoclipe"
+      },
+      {
+        "stringMobile": "O fotógrafo"
+      },
+      {
+        "stringMobile": "O modelo"
+      },
+      {
+        "stringMobile": "O dançarino"
+      },
+      {
+        "stringMobile": "A festa"
+      },
+      {
+        "stringMobile": "Aumente suas probabilidades de ganhar!"
+      },
+      {
+        "stringMobile": "Se você comprou uma das fragrâncias <span><strong>212</strong></span> insira seu código."
+      },
+      {
+        "stringMobile": "Insira já"
+      },
+      {
+        "stringMobile": "Descubra as fragrâncias"
+      },
+      {
+        "string": "IF IT WASN’T FOR YOU é a música exclusiva de Alesso para o<strong> 212VIP</strong> CLUB EDITION.<br/>Descubra agora o videoclipe oficial que o <strong>212VIP</strong> criou da música perfeita para a festa perfeita. Você quer fazer parte dele?"
+      }
+    ],
+    "footer": [
+      {
+        "string": "Como participar"
+      },
+      {
+        "string": "If it wasn't for you"
+      },
+      {
+        "string": "Termos legais"
+      },
+      {
+        "string": "<strong>Você está pronto?</strong><br/>Conecte seus fones de ouvido e vamos festejar."
+      },
+      {
+        "string": "Descubra as fragrâncias <strong>212</strong>VIP"
+      },
+      {
+        "string": "<strong>Um VIP</strong> tem sempre<br/>outras alternativas"
+      },
+      {
+        "string": "Compre uma fragrância <strong>212</strong> e você irá<br/>aumentar as suas probabilidades de ganhar."
+      },
+      {
+        "string": "Inserir agora"
+      },
+      {
+        "string": "BAIXE JÁ"
+      }
+    ],
+    "participate": [
+      {
+        "string": "???"
+      },
+      {
+        "string": "???"
+      },
+      {
+        "string": "Ver história"
+      },
+      {
+        "string": "Participe já"
+      },
+      {
+        "tags": {
+          "default": {
+            "title": "",
+            "string": ""
+          },
+          "kiss": {
+            "title": "IT’S TIME TO <strong>KISS!</strong>",
+            "string": "Envie-nos seu vídeo de 5 segundos beijando<br/>e faça parte do videoclipe de Alesso e <strong>212</strong>VIP CLUB."
+          },
+          "ready": {
+            "title": "IT’S TIME TO <strong>GET READY!</strong>",
+            "string": "Envie-nos seu vídeo de 5 segundos se preparando para sair<br/>e faça parte do videoclipe de Alesso e <strong>212</strong>VIP CLUB."
+          },
+          "dance": {
+            "title": "IT’S TIME TO <strong>DANCE!</strong>",
+            "string": "Envie-nos seu vídeo de 5 segundos dançando<br/>e faça parte do videoclipe de Alesso e <strong>212</strong>VIP CLUB."
+          },
+          "selfie": {
+            "title": "IT’S TIME TO <strong>SELFIE!</strong>",
+            "string": "Envie-nos seu vídeo de 5 segundos tirando uma selfie<br/>e faça parte do videoclipe de Alesso e <strong>212</strong>VIP CLUB."
+          },
+          "vip": {
+            "title": "<strong>Um VIP </strong>tem sempre outras alternativas",
+            "string": "Registre-se e coloque o código EAN que se encontra na embalagem da sua fragrância <strong>212</strong><br/>e aumente suas probabilidades de ganhar uma Experiência VIP."
+          },
+          "download": {
+            "title": "A TRILHA SONORA PARA AS <strong>SUAS NOITES VIP</strong>",
+            "string": "Registre-se e baixe a música deste verão em exclusividade. Despache-se! É apenas para os VIP mais rápidos."
+          }
+        }
+      }
+    ],
+    "video": [
+      {
+        "string": "Voltar ao videoclipe"
+      },
+      {
+        "string": "Participe já"
+      }
+    ],
+    "formulario": [
+      {
+        "string": "Voltar ao videoclipe"
+      },
+      {
+        "string": "Registro"
+      },
+      {
+        "string": "Participa"
+      },
+      {
+        "string": "Nome"
+      },
+      {
+        "string": "Apelido"
+      },
+      {
+        "string": "Email"
+      },
+      {
+        "string": "Data de nascimento"
+      },
+      {
+        "string": "CEP"
+      },
+      {
+        "string": "País"
+      },
+      {
+        "string": "Escolha uma loja para recolher seu presente"
+      },
+      {
+        "string": "Li os <a href=\"#\">Termos e Condições </a>e aceito a <a href=\"#\">Política de Privacidade</a>"
+      },
+      {
+        "string": "Por favor registre-se <br/>e você irá ganhar um presente exclusivo!"
+      },
+      {
+        "string": "Já estou registrado"
+      },
+      {
+        "string": "Inserir EAN CODE"
+      },
+      {
+        "stringMobile": "Envie-nos o seu vídeo de 5 segundos<br/>e faça parte do nosso videoclipe colaborativo."
+      },
+      {
+        "stringMobile": "SELECIONAR"
+      },
+      {
+        "stringMobile": "DANCE"
+      },
+      {
+        "stringMobile": "GET READY"
+      },
+      {
+        "stringMobile": "KISS"
+      },
+      {
+        "stringMobile": "SELFIE"
+      },
+      {
+        "stringMobile": "Por favor registre-se."
+      },
+      {
+        "stringMobile": "Um VIP tem sempre outras alternativas"
+      },
+      {
+        "stringMobile": "Se você comprou uma das fragrâncias <strong>212</strong> insira seu código."
+      },
+      {
+        "stringMobile": "País"
+      },
+      {
+        "string": "Por favor revise os campos destacados a vermelho."
+      },
+      {
+        "stringMobile": "Escolher a sua categoria de vídeo."
+      }
+    ],
+    "legal": [
+      {
+        "string": "It's time to"
+      },
+      {
+        "string": "Send us your most VIP 5 seconds \"default\" and<br/>be part of Alesso’s <strong>212</strong> VIP Club videoclip"
+      },
+      {
+        "string": "<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et tempus nisl, sit amet malesuada mauris. Nulla efficitur erat vitae sem tincidunt egestas. Sed ut ex id orci pretium euismod sit amet eget lacus. Phasellus tincidunt scelerisque ultricies. Curabitur auctor urna quis erat mattis, at dignissim tortor elementum. Sed volutpat laoreet dictum. Pellentesque et orci hendrerit, dapibus neque et, tempus erat.</li><li>Etiam iaculis arcu nec quam consequat facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit augue, volutpat eget gravida nec, finibus et dolor. Ut vestibulum ex sit amet felis gravida, sit amet fermentum orci varius. Sed odio turpis, blandit sit amet massa laoreet, sodales volutpat ante. Mauris fermentum imperdiet sagittis. Vestibulum venenatis, purus at fermentum sagittis, magna dui interdum quam, in gravida eros metus id ipsum. Integer pretium, lacus ut congue consequat, metus leo consequat diam, ut blandit dolor lorem nec diam. Donec interdum luctus nisl a pulvinar. Aliquam gravida laoreet ligula, ac gravida justo condimentum id. Nulla lacus ex, luctus ac nulla ut, vehicula congue orci.</li><li>Nullam placerat eleifend sapien non accumsan. Praesent nec neque ut dui posuere sodales. Integer sed venenatis risus, quis scelerisque leo. Praesent id ex felis. Cras rutrum scelerisque risus ac sodales. Nam sit amet sapien at elit euismod facilisis non auctor velit. Donec consequat magna ac augue tempus, eu varius dolor venenatis. Donec vitae sollicitudin ligula, ac ultrices ex.</li><li>Sed bibendum luctus erat. Proin fermentum, mauris eget volutpat fermentum, ante tellus auctor velit, sed consequat tortor nibh vitae lacus. Aenean bibendum odio lorem, at facilisis lorem ullamcorper nec. Ut tincidunt auctor lacus, sed gravida quam. Suspendisse molestie est purus, eu vehicula elit ullamcorper quis. Praesent nec eros id nisi mattis viverra. Aenean ac metus sapien. Fusce ac pulvinar dolor. Morbi aliquet at felis id tincidunt. Curabitur malesuada in diam et blandit. Aenean interdum fermentum ligula in condimentum. Sed fermentum nisi id risus finibus gravida. Donec eleifend blandit diam. Donec commodo felis ac erat tempus semper.</li><li>Aliquam sed aliquet tellus. Aliquam lacinia, libero eu congue ornare, felis enim mattis sem, vel aliquet leo ante ac nisl. Integer nec tincidunt elit. Nulla ut metus ultricies nisl molestie ornare sed eget eros. Suspendisse in rhoncus nibh. Nulla facilisi. Morbi pretium risus eu ante auctor, vel laoreet erat varius. Cras posuere sagittis diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris libero magna, sollicitudin ac metus eu, egestas tristique nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur feugiat vel justo aliquet feugiat.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et tempus nisl, sit amet malesuada mauris. Nulla efficitur erat vitae sem tincidunt egestas. Sed ut ex id orci pretium euismod sit amet eget lacus. Phasellus tincidunt scelerisque ultricies. Curabitur auctor urna quis erat mattis, at dignissim tortor elementum. Sed volutpat laoreet dictum. Pellentesque et orci hendrerit, dapibus neque et, tempus erat.</li><li>Etiam iaculis arcu nec quam consequat facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit augue, volutpat eget gravida nec, finibus et dolor. Ut vestibulum ex sit amet felis gravida, sit amet fermentum orci varius. Sed odio turpis, blandit sit amet massa laoreet, sodales volutpat ante. Mauris fermentum imperdiet sagittis. Vestibulum venenatis, purus at fermentum sagittis, magna dui interdum quam, in gravida eros metus id ipsum. Integer pretium, lacus ut congue consequat, metus leo consequat diam, ut blandit dolor lorem nec diam. Donec interdum luctus nisl a pulvinar. Aliquam gravida laoreet ligula, ac gravida justo condimentum id. Nulla lacus ex, luctus ac nulla ut, vehicula congue orci.</li><li>Nullam placerat eleifend sapien non accumsan. Praesent nec neque ut dui posuere sodales. Integer sed venenatis risus, quis scelerisque leo. Praesent id ex felis. Cras rutrum scelerisque risus ac sodales. Nam sit amet sapien at elit euismod facilisis non auctor velit. Donec consequat magna ac augue tempus, eu varius dolor venenatis. Donec vitae sollicitudin ligula, ac ultrices ex.</li><li>Sed bibendum luctus erat. Proin fermentum, mauris eget volutpat fermentum, ante tellus auctor velit, sed consequat tortor nibh vitae lacus. Aenean bibendum odio lorem, at facilisis lorem ullamcorper nec. Ut tincidunt auctor lacus, sed gravida quam. Suspendisse molestie est purus, eu vehicula elit ullamcorper quis. Praesent nec eros id nisi mattis viverra. Aenean ac metus sapien. Fusce ac pulvinar dolor. Morbi aliquet at felis id tincidunt. Curabitur malesuada in diam et blandit. Aenean interdum fermentum ligula in condimentum. Sed fermentum nisi id risus finibus gravida. Donec eleifend blandit diam. Donec commodo felis ac erat tempus semper.</li><li>Aliquam sed aliquet tellus. Aliquam lacinia, libero eu congue ornare, felis enim mattis sem, vel aliquet leo ante ac nisl. Integer nec tincidunt elit. Nulla ut metus ultricies nisl molestie ornare sed eget eros. Suspendisse in rhoncus nibh. Nulla facilisi. Morbi pretium risus eu ante auctor, vel laoreet erat varius. Cras posuere sagittis diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris libero magna, sollicitudin ac metus eu, egestas tristique nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur feugiat vel justo aliquet feugiat.</li><li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et tempus nisl, sit amet malesuada mauris. Nulla efficitur erat vitae sem tincidunt egestas. Sed ut ex id orci pretium euismod sit amet eget lacus. Phasellus tincidunt scelerisque ultricies. Curabitur auctor urna quis erat mattis, at dignissim tortor elementum. Sed volutpat laoreet dictum. Pellentesque et orci hendrerit, dapibus neque et, tempus erat.</li><li>Etiam iaculis arcu nec quam consequat facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed elit augue, volutpat eget gravida nec, finibus et dolor. Ut vestibulum ex sit amet felis gravida, sit amet fermentum orci varius. Sed odio turpis, blandit sit amet massa laoreet, sodales volutpat ante. Mauris fermentum imperdiet sagittis. Vestibulum venenatis, purus at fermentum sagittis, magna dui interdum quam, in gravida eros metus id ipsum. Integer pretium, lacus ut congue consequat, metus leo consequat diam, ut blandit dolor lorem nec diam. Donec interdum luctus nisl a pulvinar. Aliquam gravida laoreet ligula, ac gravida justo condimentum id. Nulla lacus ex, luctus ac nulla ut, vehicula congue orci.</li><li>Nullam placerat eleifend sapien non accumsan. Praesent nec neque ut dui posuere sodales. Integer sed venenatis risus, quis scelerisque leo. Praesent id ex felis. Cras rutrum scelerisque risus ac sodales. Nam sit amet sapien at elit euismod facilisis non auctor velit. Donec consequat magna ac augue tempus, eu varius dolor venenatis. Donec vitae sollicitudin ligula, ac ultrices ex.</li><li>Sed bibendum luctus erat. Proin fermentum, mauris eget volutpat fermentum, ante tellus auctor velit, sed consequat tortor nibh vitae lacus. Aenean bibendum odio lorem, at facilisis lorem ullamcorper nec. Ut tincidunt auctor lacus, sed gravida quam. Suspendisse molestie est purus, eu vehicula elit ullamcorper quis. Praesent nec eros id nisi mattis viverra. Aenean ac metus sapien. Fusce ac pulvinar dolor. Morbi aliquet at felis id tincidunt. Curabitur malesuada in diam et blandit. Aenean interdum fermentum ligula in condimentum. Sed fermentum nisi id risus finibus gravida. Donec eleifend blandit diam. Donec commodo felis ac erat tempus semper.</li><li>Aliquam sed aliquet tellus. Aliquam lacinia, libero eu congue ornare, felis enim mattis sem, vel aliquet leo ante ac nisl. Integer nec tincidunt elit. Nulla ut metus ultricies nisl molestie ornare sed eget eros. Suspendisse in rhoncus nibh. Nulla facilisi. Morbi pretium risus eu ante auctor, vel laoreet erat varius. Cras posuere sagittis diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris libero magna, sollicitudin ac metus eu, egestas tristique nisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur feugiat vel justo aliquet feugiat</li>"
+      }
+    ],
+    "upload_video": [
+      {
+        "string": "Você está conectado!"
+      },
+      {
+        "string": "Agora é o momento de carregar o seu vídeo."
+      },
+      {
+        "string": "Lembre-se que você pode carregar os vídeos que quiser."
+      },
+      {
+        "string": "<strong>DRAG YOUR VIDEO HERE</strong><br/>or"
+      },
+      {
+        "string": "Selecionar arquivo"
+      },
+      {
+        "string": "O seu vídeo deve ter no máximo 5 segundos e 16MB e estar num dos seguintes formatos:  MP4 OU MOV.",
+        "stringMobile": "O seu vídeo deve ter no máximo 5 segundos e 16MB e estar num dos seguintes formatos:  MP4 OU MOV.<br/><br/>Se você tiver problemas para enviar diretamente da câmera, tente gravar seu vídeo em baixa qualidade ou selecionar um vídeo existente em sua galeria. Se você estiver em um dispositivo iOS e ainda ter problemas com o upload do seu vídeo, tente Safari."
+      },
+      {
+        "string": ""
+      },
+      {
+        "string": "ENVIE"
+      },
+      {
+        "string": "<span>ARQUIVO INVÁLIDO!</span><br/>O SEU VÍDEO DEVE TER NO MÁXIMO 5 SEGUNDOS E 16MB E ESTAR NUM DOS SEGUINTES FORMATOS: MP4 OU MOV."
+      },
+      {
+        "string": "CARREGAR VÍDEO"
+      },
+      {
+        "string": "ARQUIVO CARREGADO!"
+      },
+      {
+        "string": "Desculpe, algo estava errado fazer o upload do vídeo. Por favor, recarregue a página e tente novamente."
+      },
+      {
+        "stringMobile": "Desculpe, para concluir a próxima etapa, use o navegador padrão no dispositivo."
+      }
+    ],
+    "thanks": [
+      {
+        "string": "Obrigado!"
+      },
+      {
+        "string": "O seu vídeo foi adicionado. Se você quiser pode personalizá-lo agora.",
+        "stringTemp": "O seu vídeo foi adicionado."
+      },
+      {
+        "string": "Ver história"
+      },
+      {
+        "string": "PARTICIPAR DE NOVO"
+      },
+      {
+        "string": "Continue participando! Lembre-se que quantos mais videos você carregar<br/>mais hipóteses terá de ganhar."
+      },
+      {
+        "string": "VOLTAR À HISTÓRIA"
+      },
+      {
+        "string": "VOLTAR"
+      },
+      {
+        "string": "<strong>OBRIGADO</strong> POR SE REGISTRAR!"
+      },
+      {
+        "string": "Este é o seu código "
+      },
+      {
+        "string": "Desfrute da música!"
+      },
+      {
+        "string": "Baixar música"
+      },
+      {
+        "stringMobile": "<strong>OBRIGADO</strong><br> POR SE REGISTRAR"
+      },
+      {
+        "string": "PERSONALIZAR"
+      }
+    ],
+    "gallery": [
+      {
+        "string": "Use as setas do teclado para navegar"
+      }
+    ],
+    "video_confirmation": [
+      {
+        "string": "Hi"
+      },
+      {
+        "string": "Thanks for confirming!"
+      },
+      {
+        "string": "Go to website"
+      }
+    ],
+    "timeline_ecualizador": [
+      {
+        "string": "VIDEOCLIPE"
+      },
+      {
+        "string": "PARTICIPANTES"
+      },
+      {
+        "string": "Quem está participando"
+      },
+      {
+        "string": "Descubra no nosso equalizador quem se juntou ao videoclipe a nível mundial."
+      },
+      {
+        "string": "Você quer conhecer <strong>Alesso?</strong>"
+      },
+      {
+        "string": "Junte-se ao nosso videoclipe."
+      }
+    ],
+    "social": [
+      {
+        "string": "Estou participando no videoclipe de Alesso e 212VIP. Participe também e ganhe uma experiência VIP!"
+      },
+      {
+        "string": "Estou mais perto de ganhar uma Experiência VIP com Alesso. Você também pode ganhar! Participe agora."
+      },
+      {
+        "string": "Colaborei no videoclipe de 212VIP e Alesso. Você também pode! Participe e ganhe uma Experiência VIP."
+      }
+    ],
+    "menu": [
+      {
+        "stringMobile": "Voltar"
+      },
+      {
+        "stringMobile": "Participar"
+      },
+      {
+        "stringMobile": "Videoclipe"
+      },
+      {
+        "stringMobile": "Aumente suas probabilidades de ganhar"
+      },
+      {
+        "stringMobile": "Fragrâncias"
+      },
+      {
+        "stringMobile": "Como participar"
+      },
+      {
+        "stringMobile": "http://www.carolinaherrera.com/212/pt/vip-club-edition/fragrancia/mulher"
+      }
+    ],
+    "error_server": [
+      {
+        "string": "Este endereço de email não está registrado.<br/>Por favor verifique se está correcto ou complete o seu registro para participar."
+      },
+      {
+        "string": "Este endereço de email já está registrado.<br/>Por favor marque a caixa de selecção correspondente a \"Já estou registrado\" para continuar."
+      },
+      {
+        "string": "Este EAN código não é válido.<br/>Por favor verifique se está correcto."
+      },
+      {
+        "string": "Você já usou este EAN código.<br/>Por favor insira um diferente."
+      },
+      {
+        "string": "Você deve ser maior de idade."
+      }
+    ],
+    "how": [
+      {
+        "stringMobile": "<div class='jspPane-content'><h3>COMO PARTICIPAR</h3><h4>VIDEOCLIPE COLABORATIVO</h4><ul><li>Registre-se.</li><li>Só por se registrar você ganhará um presente exlusivo para autênticos VIP.</li><li>Escolha o seu momento mais VIP (DANCE, GET READY, KISS ou SELFIE) e envie-nos um vídeo de 5 segundos com ele.</li><li>Não há limites, você pode carregar os vídeos que desejar.</li><li>Os melhores passarão a fazer parte do videoclipe colaborativo de Alesso e <strong>212</strong>VIP.</li><li>O juri da Carolina Herrera irá escolher 3 vencedores para desfrutar do grande prémio final: uma viagem, onde poderão conhecer Alesso e assistir ao seu concerto ao mais puro estilo VIP.</li></ul><h4>EAN CODE </h4><ul><li>Compre uma das fragrâncias <strong>212</strong> Carolina Herrera.</li><li>Registre-se (se ainda não o fez).</li><li>Clique nos perfumes da tela inicial deste site.</li><li>Insira o código (EAN CODE) que irá encontrar no fundo da embalagem do seu <strong>212</strong>.</li><li>Entre no sorteio de uma Experiência VIP, onde poderá conhecer Alesso e viver o seu concerto em grande.</li></ul></div>"
+      }
+    ],
+    "video_config": [
+      {
+        "string": "PERSONALIZE O SEU VÍDEO"
+      },
+      {
+        "string": "PASSO 1: Selecione um destes títulos para servir de introdução ao seu vídeo."
+      },
+      {
+        "string": "PASSO 2: Escolha o seu filtro favorito para adicionar o toque final VIP."
+      },
+      {
+        "string": "Introdução"
+      },
+      {
+        "string": "Filtros"
+      },
+      {
+        "string": "Salvar"
+      },
+      {
+        "string": "Este é o seu vídeo personalizado."
+      },
+      {
+        "string": "Mostre para todo mundo o seu melhor lado VIP!"
+      },
+      {
+        "string": "Enviar por email."
+      },
+      {
+        "string": "FOR 212 VIP"
+      },
+      {
+        "string": "Torne-se um VIP como "
+      },
+      {
+        "string": "e junte-se ao nosso vídeoclipe colaborativo.<br/>Você pode ganhar uma Experiência VIP!"
+      },
+      {
+        "string": "PARTICIPAR"
+      },
+      {
+        "string": "Participei no videoclipe de 212VIP. Você também pode participar! Participe e ganhe uma experiência VIP."
+      },
+      {
+        "string": "PERSONALIZE SEU<br />VÍDEO EM 2 PASSOS"
+      },
+      {
+        "string": "Escolha o seu favorito e introdução adicionado um filtro para dar o toque VIP para o seu vídeo."
+      },
+      {
+        "string": "Começa"
+      }
+    ],
+    "project": [
+      {
+        "string": "A fragrância"
+      },
+      {
+        "string": "Para dar as boas vindas à nova <strong>212VIP</strong> CLUB Edition, a música e a fragrância se unem em um único conceito \"A MÚSICA PERFEITA PARA A FESTA PERFEITA\". Só precisávamos do DJ do momento para completar nosso mix."
+      },
+      {
+        "string": "A canção"
+      },
+      {
+        "string": "Alesso, um dos DJs mais reconhecido do mundo, criou IF IT WASN’T FOR YOU em exclusivo para o 212 VIP.  A música foi apresentada no último Ultra Miami e, desde então, já correu o mundo."
+      },
+      {
+        "string": "O videoclipe"
+      },
+      {
+        "string": "O videclipe oficial é uma criação de <strong>212</strong>. Dirigido por Pensacola e produzido por Canadá, foi rodado entre Barcelona e Buenos Aires, onde não deixamos de percorrer as festas mais exclusivas."
+      }
+    ]
+  }
+]

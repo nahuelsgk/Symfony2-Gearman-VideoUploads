@@ -1,0 +1,21 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	<h2>Test render video</h2>
+	<form action="{{ path('_admin_queue_test_render_video') }}" method="post">
+	 	{{ form_widget(form) }}
+	    <input type="submit" />
+	</form>
+
+	<h2>Results</h2>
+	<pre>{{ dump(results) }}</pre>
+	
+</div>
+{% endblock %}

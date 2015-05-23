@@ -1,0 +1,41 @@
+<% if(tag === 'download'){%>
+<div class="participate animated fadeIn">
+  <h1 class="col-xs-12"><%= title %></h1>
+  <p class="col-xs-12 subtitle texto-espaciado"><%= p1%><strong><%= code %></strong>. <%= p2 %></p>
+  <div class="col-xs-4 col-xs-offset-4">
+    <div class="wrapper-participate">
+      <p>
+        <a  target="_blank" href="http://www.umgmusic.com/alesso/" type="button" class="btn btn-default" data-bypass><%= b1 %></a>
+      </p>
+    </div>
+  </div>
+</div>
+<%}else { %>
+
+  <div class="participate animated fadeIn">
+    <h1 class="col-xs-12"><strong><%= title %></strong></h1>
+    <% if(eanCode) {%>
+      <p class="col-xs-12 subtitle"><%= p2 %></p>
+      <div class="col-xs-4 col-xs-offset-4">
+        <div class="wrapper-participate">
+          <!--<p>
+            <a href="timeline"  type="button" class="btn btn-default"><%= b3 %></a>
+          </p>-->
+        </div>
+      </div>
+    <% }else { %>
+    <p class="col-xs-12subtitle"><%= p1 %></p>
+    <div class="col-xs-4 col-xs-offset-4">
+      <div class="wrapper-participate">
+        <p>
+          <a type="button" class="btn btn-default go-to-video" data-bypass><%= b1 %></a>
+          <a href="participate/<%= tag %>/upload" type="button" class="btn btn-default"><%= b2 %></a>
+          <!--<a href="participate/<%= tag %>/config-video/title" type="button" class="btn btn-default generaP-preview"><%= b4 %></a>-->
+        </p>
+      </div>
+    </div>
+    <% }%>
+    <div class="col-xs-12 social"></div>
+  </div>
+<%}%>
+<%= sizmekCode %>

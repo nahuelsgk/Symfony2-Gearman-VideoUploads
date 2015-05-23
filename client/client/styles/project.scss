@@ -1,0 +1,17 @@
+.container-project{
+  margin-top: -80px;
+  .col-xs-7{
+    float: none;
+    margin: 0 auto;
+    h4, p{
+      font-family: 'HelveticaNeueLTStd-LtCn';
+      font-size: 22px;
+      letter-spacing: 0.09em;
+    }
+    p{
+      margin-top: 15px;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+<table class="table table-condensed">
+<thead>
+<th>Id</th>
+<th class="col-md-2">Video Name</th>
+<th>Video Original Name</td>
+<th>Video Frame</th>
+<th>Mime Type</th>
+<th>User Email</th>
+<th>Hotspot</th>
+<th>Paths</th>
+<th>IP</th>
+<th>Date</th>
+<th>Actions</th>
+</thead>
+
+<tbody>
+{% for video in pagination %}
+<tr 
+  {% if video.confirmedByUser == false %} 
+  	class="info"
+  {% else %} 
+  	{% if video.status == 'new' %} class="warning"{% endif %}
+  	{% if video.status == 'rejected' %} class="danger"{% endif %}
+  	{% if video.status == 'approved' %} class="success"{% endif %}
+  {% endif %}
+>
+<td>{{ video.id }}</td>
+<td><a title="{{ video.path }}" href="{{path('_admin_watch_video', {'video_id': video.id})}}">{{ video.path | slice(0, 10) }}...</a></td>
+<td>{% if video.originalName is not null %}<a title="{{video.originalName}}"> {{video.originalName | slice(0,10)}}...</a>{% endif %}</td>
+<td><video id='video' controls='true' style="max-height: 170px;">
+    <source src="{{path('_admin_watch_video', {'video_id': video.id})}}" type="video/mp4">
+    <source src="{{path('_admin_watch_video', {'video_id': video.id})}}" type="video/webm">
+    <source src="{{path('_admin_watch_video', {'video_id': video.id})}}" type="video/ogg">
+</video>
+</td>
+<td>{% if video.mimeType is not null %}{{video.mimeType}}{% endif %}</td>
+<td>{% if video.user is not null %} {{video.user.email}} {% endif %}</td>
+<td>{% if video.hotspot is not null %} {{video.hotspot}} {% endif %}</td>
+<!--
+<td>
+	{% if video.confirmedByUser is not null %}
+		<center>
+		{% if video.confirmedByUser == 'true' %}
+			<span class="glyphicon glyphicon-thumbs-up" style="color: green;" aria-hidden="true"></span>
+		{% else %}
+			<span align="center" class="glyphicon glyphicon-thumbs-down" style="color: red;" aria-hidden="true"></span>
+		{% endif %}
+		</center>
+	{% endif %}
+</td>-->
+<td>
+	{% if video.previewItaliano is not null %}
+	Italiano: {{video.previewItaliano}}
+	<br/>
+	{% endif %}
+	{% if video.previewWaldengrid is not null %}
+	Grid: {{video.previewWaldengrid}}
+	<br/>
+	{% endif %}
+	{% if video.previewLightleaks is not null %}
+	Lightleaks: {{video.previewLightleaks}}
+	<br/>
+	{% endif %}
+	{% if video.render is not null %}
+		Render {{video.render}}
+	{% endif %}
+</td>
+<!-- 
+<td>
+	<center>
+	{% if video.status is not null %}
+		{{ video.status|capitalize }}
+	{% endif %}
+	</center>
+</td>
+-->
+<td>{% if video.ip is not null %}{{video.ip}}{% endif %}</td>
+<td>{% if video.created is not null %}{{video.created | date('d-m-y H:m:s')}}{% endif %}</td>
+<td>
+  {% if video.confirmedByUser == true %}
+  <a title="Reject" href="{{path('_admin_reject_video', {'video_id': video.id})}}" onClick="return confirmAction('You are about to reject this video. Do you want to continue?');">
+  	<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+  </a>
+  |
+  <a title="Approve" href="{{path('_admin_approve_video', {'video_id': video.id})}}" onClick="return confirmAction('You are about to approve this video.Do you want to continue?');">
+  	<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+  </a>
+  {% else %}
+	  {% if video.user is not null %}
+	  <br>
+	  <center>
+	  <a title="Simulate approve by user" href="{{path('_admin_approve_video_by_user_confirmation', {'user_id': video.user.id, 'video_id':video.id})}}">
+	  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+	  </a>
+	  </center>
+	  {% endif %}
+  {% endif %}
+  <br/>
+   <a title="Download" href="{{path('_admin_download_video', {'video_id': video.id})}}">
+  	<span class="glyphicon glyphicon-download" aria-hidden="true"></span>
+  </a>
+  |
+  <a title="Delete" href="{{path('_admin_remove_video', {'video_id': video.id})}}" onClick="return confirmAction('You are about to delete permanently this video. Do you want to continue? THIS ACTION CAN NOT BE UNDONE!');">
+  	<span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+  </a>
+</td>
+</tr>
+{% endfor %}
+</tbody>
+
+</table>

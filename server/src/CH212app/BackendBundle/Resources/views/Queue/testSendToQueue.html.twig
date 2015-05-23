@@ -1,0 +1,17 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h2>Test a waiting job</h2>
+<form action="{{ path('_admin_queue_send_test') }}" method="post">
+    <input type="submit" />
+</form>
+Result: {{ result }}<br/>
+</div>
+{% endblock %}

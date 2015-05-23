@@ -1,0 +1,32 @@
+<main class="gallery">
+  <div id="container">
+    <section id="gallery212" data-universe="Alesso Gallery" data-slide="">
+
+      <ul class="gallery-slides" data-cols="<%= colNum %>">
+        <% _.each(gallery,function(imageData){%>
+        <li id='gallery-slide-<%= imageData.id %>' style="background-image: url('<%= imageData.url %>');">
+          <img class="landscape" src="<%= imageData.url %>"/>
+        </li>
+        <%});%>
+      </ul>
+
+      <nav>
+        <% _.each(gallery,function(imageData){%>
+        <a id="gallery-nav-<%= imageData.id %>" class="slide-link" data-bypass></a>
+        <%});%>
+      </nav>
+
+      <div class="controls">
+        <a data-bypass href="#" id="gallery-slide-up" data-direction="up" class="arrow up"></a>
+        <a data-bypass href="#" id="gallery-slide-down" data-direction="down" class="arrow down"></a>
+        <a data-bypass href="#" id="gallery-slide-left" data-direction="left" class="arrow left"></a>
+        <a data-bypass href="#" id="gallery-slide-right" data-direction="right" class="arrow right"></a>
+      </div>
+
+      <div class="tip"><%= tip %></div>
+
+    </section>
+  </div>
+</main>
+<header></header>
+<footer></footer>

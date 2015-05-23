@@ -1,0 +1,24 @@
+<div class="participate animated fadeInUp">
+  <h1 class="col-xs-12"><strong><%= title %></strong></h1>
+  <p class="col-xs-12 in-margin"><%= p1 %></p>
+  <div class="col-xs-4 col-xs-offset-4 wrapper-drag-zone">
+
+    <div class="upload-zone"> <!--adding class="drag-zone" the user can drag and drop files. -->
+      <button id="participate" type="button" class="btn btn-default select-file"><%= b1 %></button>
+      <input class="hidden" id="fileInput" type="file" name="fileInput">
+    </div>
+    <div class="wrapper-loading onload">
+      <div class="loading-video">
+        <div class="loading-video-bar"></div>
+      </div>
+    </div>
+    <p class="loading-text"></p>
+    <p class="error-upload"></p>
+    <p class="video-requeriment"><%= p4 %></p>
+    <div class="legal-terms loaded">
+      <!--<p><span class="unCheck readed"></span><%= p5 %></p>-->
+      <button href="/participate" class="btn btn-default send"><%= b2 %></button>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,25 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Audio Download Code creation</h1>
+
+    <form action="{{ path('admin_audiodownloadcode_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <p>
+            <button type="submit">Create</button>
+        </p>
+    </form>
+
+    <ul class="record_actions">
+	    <li>
+	        <a href="{{ path('admin_audiodownloadcode') }}">
+	            Back to the list
+	        </a>
+	    </li>
+	</ul>
+</div>
+{% endblock %}

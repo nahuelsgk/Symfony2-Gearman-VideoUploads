@@ -1,0 +1,57 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>AudioDownloadCode</h1>
+
+    <table class="table table-condensed">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Code</th>
+                <td>{{ entity.code }}</td>
+            </tr>
+            {% if entity.user is not null %}
+            <tr>
+                <th>Assigned code to username</th>
+                <td>{{ entity.user.username }}</td>
+            </tr>
+            <tr>
+                <th>Assigned code to email</th>
+                <td>{{ entity.user.email }}</td>
+            </tr>
+            <tr>
+                <th>Assigned code to id</th>
+                <td>{{ entity.user.id }}</td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+    <ul class="record_actions">
+	    <li>
+	        <a href="{{ path('admin_audiodownloadcode') }}">
+	            Back to the list
+	        </a>
+	    </li>
+	    <li>
+	        <a href="{{ path('admin_audiodownloadcode_edit', { 'id': entity.id }) }}">
+	            Edit
+	        </a>
+	    </li>
+	    <li>
+	        <form action="{{ path('admin_audiodownloadcode_delete', { 'id': entity.id }) }}" method="post">
+	            <input type="hidden" name="_method" value="DELETE" />
+	            {{ form_widget(delete_form) }}
+	            <button type="submit">Delete</button>
+	        </form>
+	    </li>
+	</ul>
+</div>
+{% endblock %}

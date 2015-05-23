@@ -1,0 +1,52 @@
+.ui-widget-content {
+  font-family : $base-font-family !important;
+  border      : 1px solid $grey-base-2 !important;
+  background  : rgba(0, 0, 0, 0.8) none !important;
+  color       : $grey-base-2 !important;
+}
+#ui-datepicker-div {
+  margin-top : 10px !important;
+}
+.ui-widget-header {
+  border     : none !important;
+  background : none !important;
+  color      : $grey-base !important;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border      : none !important;
+  background  : none !important;
+  font-weight : bold;
+  color       : $grey-base-2 !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border     : none !important;
+  background : none !important;
+  color      : $grey-base !important;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius : $border-radius !important;
+}
+.ui-datepicker-month {
+}
+.ui-datepicker-year {
+  margin-left : 10px !important;
+}
+.ui-datepicker-calendar thead {
+  font-weight : bold !important;
+  color       : $grey-base;
+}
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+  height       : 30px !important;
+  padding-left : 10px !important;
+  font-family  : $base-font-family !important;
+}
+.ui-datepicker .ui-datepicker-prev-hover, .ui-datepicker .ui-datepicker-next-hover {
+  /* top: 1px; */
+}
+.ui-icon-circle-triangle-e {
+  background-position : -30px 0 !important;
+}
+.ui-icon-circle-triangle-w {
+  background-position : -100px 0 !important;
+}
+

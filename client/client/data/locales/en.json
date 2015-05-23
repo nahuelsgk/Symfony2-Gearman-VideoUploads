@@ -1,0 +1,473 @@
+[
+  {
+    "id": 1,
+    "home": [
+      {
+        "hash": "#ALESSOFOR<strong>212</strong>VIP",
+        "string": "Enjoy an interactive experience with Alesso.<br/>Follow the characters and participate in our collaborative videoclip uploading your 5 second video. You can win an exclusive trip where you will meet Alesso like a real VIP."
+      },
+      {
+        "stringMobile": "#ALESSOFOR<span><strong>212</strong>VIP</span>"
+      },
+      {
+        "stringMobile": "Follow the characters and participate in our collaborative videoclip uploading 5 seconds video.<br/>You can win an exclusive trip to where you will meet Alesso."
+      },
+      {
+        "stringMobile": "Participate now"
+      },
+      {
+        "stringMobile": "Watch the videoclip"
+      },
+      {
+        "stringMobile": "The photographer"
+      },
+      {
+        "stringMobile": "The model"
+      },
+      {
+        "stringMobile": "The dancer"
+      },
+      {
+        "stringMobile": "The party"
+      },
+      {
+        "stringMobile": "Increase your chances to win!"
+      },
+      {
+        "stringMobile": "If you have bought one of the <span><strong>212</strong></span> fragrances enter your code."
+      },
+      {
+        "stringMobile": "Enter now"
+      },
+      {
+        "stringMobile": "Discover the fragrances"
+      },
+      {
+        "string": "IF IT WASN’T FOR YOU is the exclusive song created by Alesso for <strong>212VIP</strong> CLUB EDITION.<br/>Discover the official videoclip he has created for <strong>212VIP</strong> of the perfect song for the perfect party. Do you want to take part in it?"
+      }
+    ],
+    "footer": [
+      {
+        "string": "How to participate"
+      },
+      {
+        "string": "If it wasn't for you"
+      },
+      {
+        "string": "Legal terms"
+      },
+      {
+        "string": "<strong>Are you ready?</strong><br/>Connect your headphones and let’s party."
+      },
+      {
+        "string": "Discover <strong>212</strong>VIP Fragrances"
+      },
+      {
+        "string": "<strong>A VIP</strong> always has<br>more options"
+      },
+      {
+        "string": "Purchase a <strong>212</strong> fragrance and<br>increase your chances to win."
+      },
+      {
+        "string": "Enter Now"
+      },
+      {
+        "string": "Download Now!"
+      }
+    ],
+    "participate": [
+      {
+        "string": "???"
+      },
+      {
+        "string": "???"
+      },
+      {
+        "string": "Watch story"
+      },
+      {
+        "string": "Participate now"
+      },
+      {
+        "tags": {
+          "default": {
+            "title": "",
+            "string": ""
+          },
+          "kiss": {
+            "title": "IT’S TIME TO <strong>KISS!</strong>",
+            "string": "Send us your 5 second video kissing yourself<br/>and be part of the Alesso & <strong>212</strong>VIP Club videoclip."
+          },
+          "ready": {
+            "title": "IT’S TIME TO <strong>GET READY!</strong>",
+            "string": "Send us your 5 second video getting ready to go out<br/>and be part of the Alesso & <strong>212</strong>VIP Club videoclip."
+          },
+          "dance": {
+            "title": "IT’S TIME TO <strong>DANCE!</strong>",
+            "string": "Send us your 5 second video dancing<br/>and be part of the Alesso & <strong>212</strong>VIP Club videoclip."
+          },
+          "selfie": {
+            "title": "IT’S TIME TO <strong>SELFIE!</strong>",
+            "string": "Send us your 5 second video taking a selfie<br/>and be part of the Alesso & <strong>212</strong>VIP Club videoclip."
+          },
+          "vip": {
+            "title": "<strong>A VIP</strong> always has more options",
+            "string": "Register and enter the EAN code on your <strong>212</strong> fragrance box<br/>and increase your chance to win a VIP Experience."
+          },
+          "download": {
+            "title": "THE SOUNDTRACK OF <strong>YOUR VIP NIGHTS</strong>",
+            "string": "Register and download the summer’s song in exclusivity. Hurry up! Only for the fastest VIPs."
+          }
+        }
+      }
+    ],
+    "video": [
+      {
+        "string": "Back to videoclip"
+      },
+      {
+        "string": "Participate now"
+      }
+    ],
+    "formulario": [
+      {
+        "string": "Back to videoclip"
+      },
+      {
+        "string": "Register"
+      },
+      {
+        "string": "Participate"
+      },
+      {
+        "string": "Name"
+      },
+      {
+        "string": "Surname(s)"
+      },
+      {
+        "string": "Email"
+      },
+      {
+        "string": "Date of birth"
+      },
+      {
+        "string": "Zipcode"
+      },
+      {
+        "string": "Country"
+      },
+      {
+        "string": "Choose a store to collect your special gift"
+      },
+      {
+        "string": "I have read the <a href=\"#\">Terms and Conditions </a> & accept the <a href=\"#\">Privacy Policy</a>"
+      },
+      {
+        "string": "Please register below<br/>and you will receive an exclusive gift!."
+      },
+      {
+        "string": "I’m already registered"
+      },
+      {
+        "string": "Enter EAN CODE"
+      },
+      {
+        "stringMobile": "Send us your 5 seconds video<br/>and be part of our collaborative videoclip."
+      },
+      {
+        "stringMobile": "CHOOSE"
+      },
+      {
+        "stringMobile": "DANCE"
+      },
+      {
+        "stringMobile": "GET READY"
+      },
+      {
+        "stringMobile": "KISS"
+      },
+      {
+        "stringMobile": "SELFIE"
+      },
+      {
+        "stringMobile": "Please register below."
+      },
+      {
+        "stringMobile": "Increase your chances to win!"
+      },
+      {
+        "stringMobile": "If you have bought one of the <strong>212</strong> fragrances, enter your code."
+      },
+      {
+        "stringMobile": "Country"
+      },
+      {
+        "string": "Please revise the field(s) highlighted in red."
+      },
+      {
+        "stringMobile": "Select your video category."
+      }
+    ],
+    "legal": [
+      {
+        "string": "It's time to"
+      },
+      {
+        "string": "Send us your VIP 5 seconds \"default\" video<br/>and be part of Alesso’s & <strong>212</strong>VIP CLUB videoclip."
+      },
+      {
+        "string": "<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et tempus nisl, sit amet malesuada mauris. Nulla efficitur erat vitae sem tincidunt egestas. Sed ut ex id orci pretium euismod sit amet eget lacus. Phasellus tincidunt scelerisque ultricies. Curabitur auctor urna quis erat mattis, at dignissim tortor elementum. Sed volutpat laoreet dictum. Pellentesque et orci hendrerit, dapibus neque et, tempus erat.</li>"
+      }
+    ],
+    "upload_video": [
+      {
+        "string": "You are in!"
+      },
+      {
+        "string": "Now it’s time to upload your video."
+      },
+      {
+        "string": "Remember you can upload as many videos as you want."
+      },
+      {
+        "string": "<strong>DRAG YOUR VIDEO HERE</strong><br/>or"
+      },
+      {
+        "string": "Select file"
+      },
+      {
+        "string": "Your video must be up to 5 seconds long, 16MB max and one of the following formats: MP4 OR MOV.",
+        "stringMobile": "Your video must be up to 5 seconds long, 16MB max and one of the following formats: MP4 OR MOV.<br/><br/>If you have problems sending yout video directly from the camera, try to record it in lower quality or select an existing video from your gallery. If you're on an iOS device and still have problems with uploading your video, try Safari."
+      },
+      {
+        "string": ""
+      },
+      {
+        "string": "SEND"
+      },
+      {
+        "string": "<span>INVALID FILE!</span><br/>REMEMBER, YOUR VIDEO MUST BE UP TO 5 SECONDS LONG, 16MB MAX AND ONE OF THE FOLLOWING FORMATS: MP4 OR MOV."
+      },
+      {
+        "string": "UPLOADING VIDEO"
+      },
+      {
+        "string": "VIDEO UPLOADED!"
+      },
+      {
+        "string": "Sorry, something was wrong uploading the video. Please reload the page and try again."
+      },
+      {
+        "stringMobile": "Sorry, to complete the next step, use the default browser on your device."
+      }
+    ],
+    "thanks": [
+      {
+        "string": "Thank you!"
+      },
+      {
+        "string": "Your video is in. If you want you can customize it now.",
+        "stringTemp": "Your video is in."
+      },
+      {
+        "string": "BACK TO STORY"
+      },
+      {
+        "string": "PARTICIPATE AGAIN"
+      },
+      {
+        "string": "Continue participating. The more videos you upload<br/>the more chances you have of winning."
+      },
+      {
+        "string": "BACK TO STORY"
+      },
+      {
+        "string": "BACK"
+      },
+      {
+        "string": "<strong>THANKS</strong> FOR REGISTERING!"
+      },
+      {
+        "string": "This is your download code "
+      },
+      {
+        "string": "Enjoy the song!"
+      },
+      {
+        "string": "Download song"
+      },
+      {
+        "stringMobile": "<strong>THANKS</strong><br> FOR REGISTERING!"
+      },
+      {
+        "string": "CUSTOMIZE"
+      }
+    ],
+    "gallery": [
+      {
+        "string": "Use the arrow keys to navigate"
+      }
+    ],
+    "video_confirmation": [
+      {
+        "string": "Hi"
+      },
+      {
+        "string": "Thanks for confirming!"
+      },
+      {
+        "string": "Go to website"
+      }
+    ],
+    "timeline_ecualizador": [
+      {
+        "string": "VIDEOCLIP"
+      },
+      {
+        "string": "PARTICIPANTS"
+      },
+      {
+        "string": "Who is taking part"
+      },
+      {
+        "string": "Discover in our equalizer who has joined the videoclip from all over the world."
+      },
+      {
+        "string": "Do you want to meet <strong>Alesso?</strong>"
+      },
+      {
+        "string": "Join our videoclip"
+      }
+    ],
+    "social": [
+      {
+        "string": "I’m taking part in the Alesso and 212VIP video. Join in too and win a VIP Experience!"
+      },
+      {
+        "string": "I’m one step closer to winning a VIP Experience with Alesso. You can too! Take part now."
+      },
+      {
+        "string": "I’ve taken part in the 212VIP and Alesso video. You can too! Join in and win a VIP Experience."
+      }
+    ],
+    "menu": [
+      {
+        "stringMobile": "BACK"
+      },
+      {
+        "stringMobile": "Participate"
+      },
+      {
+        "stringMobile": "Videoclip"
+      },
+      {
+        "stringMobile": "Increase your chances to win"
+      },
+      {
+        "stringMobile": "Fragrance"
+      },
+      {
+        "stringMobile": "How to participate"
+      },
+      {
+        "stringMobile": "http://www.carolinaherrera.com/212/en/vip-club-edition/fragrance/women"
+      }
+    ],
+    "error_server": [
+      {
+        "string": "The e-mail address is not registered.<br/>Please make sure it is correct or complete your registration to take part."
+      },
+      {
+        "string": "The e-mail address is already registered.<br/>Check the \"I am already registered\" box to continue."
+      },
+      {
+        "string": "This EAN CODE is not valid.<br/>Please make sure it is correct."
+      },
+      {
+        "string": "You've used this EAN CODE.<br/>Please enter a different."
+      },
+      {
+        "string": "You must be +18."
+      }
+    ],
+    "how": [
+      {
+        "stringMobile": "<div class='jspPane-content'><h3>HOW TO PARTICIPATE</h3><h4>COLLABORATIVE VIDEOCLIP</h4><ul><li>Register.</li><li>Just for registering you will receive an exclusive gift for true VIPs.</li><li>Choose your most VIP moment (DANCE, GET READY, KISS or SELFIE) and send us a 5 second video with it.</li><li>There is no limit, you can upload as many videos as you want.</li><li>The best will form part of the Alesso and <strong>212</strong>VIP collaborative videoclip.</li><li>The Carolina Herrera panel will choose 3 winners to enjoy the grand prize: a trip to meet Alesso and attend his concert in true VIP style.</li></ul><h4>EAN CODE </h4><ul><li>Buy one of the <strong>212</strong> Carolina Herrera fragrances.</li><li>Register (if you haven’t already done so).</li><li>Click on the perfumes on the web page of this site.</li><li>Enter the code (EAN CODE), which you will find on the back of your <strong>212</strong> box.</li><li>Enter the draw for a VIP Experience, where you will be able to meet Alesso and enjoy his concert in style.</li></ul></div>"
+      }
+    ],
+    "video_config": [
+      {
+        "string": "CUSTOMIZE YOUR VIDEO"
+      },
+      {
+        "string": "STEP 1: Select one of these titles as intro for your video"
+      },
+      {
+        "string": "STEP 2: Choose your favorite filter to add the VIP final touch"
+      },
+      {
+        "string": "INTRO"
+      },
+      {
+        "string": "FILTERS"
+      },
+      {
+        "string": "SAVE"
+      },
+      {
+        "string": "THIS IS YOUR CUSTOMIZED VIDEO."
+      },
+      {
+        "string": "SHOW EVERYONE YOUR MOST VIP SIDE!"
+      },
+      {
+        "string": "SEND BY EMAIL"
+      },
+      {
+        "string": "FOR 212 VIP"
+      },
+      {
+        "string": "BECOME A VIP AS "
+      },
+      {
+        "string": "AND JOIN OUR COLLABORATIVE VIDEOCLIP.<br/>YOU CAN WIN A VIP EXPERIENCE!"
+      },
+      {
+        "string": "PARTICIPATE"
+      },
+      {
+        "string": "I have joined the 212 VIP videoclip and this is my collaboration. Join & win a VIP Experience!"
+      },
+      {
+        "string": "Customize your<br />video in 2 steps"
+      },
+      {
+        "string": "Select your favorite intro & filter to add the VIP touch to your video."
+      },
+      {
+        "string": "Start"
+      }
+    ],
+    "project": [
+      {
+        "string": "The fragrance"
+      },
+      {
+        "string": "To herald the arrival of the new <strong>212VIP</strong> CLUB Edition, music and fragrance unite in a unique concept, \"THE PERFECT SONG FOR THE PERFECT PARTY\". All we needed was the DJ of the moment to complete the mix."
+      },
+      {
+        "string": "The song"
+      },
+      {
+        "string": "Alesso, one of the most renowned DJs in the world, has created an exclusive for 212VIP, IF IT WASN’T FOR YOU. The song was unveiled at the latest Ultra Miami and has been doing the rounds ever since."
+      },
+      {
+        "string": "The video"
+      },
+      {
+        "string": "The official video is a <strong>212</strong> creation. Directed by Pensacola and produced by Canada, it was shot in Barcelona and Buenos Aires, where we went from one exclusive party to the next."
+      }
+    ]
+  }
+]

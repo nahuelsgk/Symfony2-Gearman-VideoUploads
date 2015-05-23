@@ -1,0 +1,220 @@
+// Signup styles
+
+.signup {
+  /*overflow-x : hidden;*/
+  height   : auto !important;
+  overflow : visible;
+}
+.in-margin{
+  margin-top: 40px !important;
+  margin-bottom: 1% !important;
+}
+.signup h1 {
+  font-size : $title-font-size-lite;
+  strong{
+    font-family: $bold-neue-font;
+  }
+}
+.signup2{
+  margin-bottom: 20px;
+  h1{
+    margin-bottom: 20px;
+  }
+  .subtitle{
+    margin-bottom: 25px;
+  }
+}
+.button-signup2 {
+  margin-top: 15px;
+}
+.wrapper-signup {
+  margin-top : 10px;
+}
+form .row, form .form-group {
+  margin : 0;
+}
+form .row {
+  margin-bottom : 10px;
+}
+form {
+  margin-top : 10px;
+}
+form .col-xs-12, form .col-xs-9, form .col-xs-8, form .col-xs-6, form .col-xs-4, form .col-xs-4, form .col-xs-3, {
+  padding : 0 5px;
+}
+.wrapper-participate button {
+  margin : 0 10px;
+}
+form a:hover {
+  color  : $grey-dark;
+  cursor : pointer;
+}
+#formularioBoxesWrapper {
+  position : relative;
+  height   : 375px;
+}
+#loginWrapper, #registroWrapper {
+  position : absolute;
+  top      : 0;
+}
+#loginWrapper {
+  opacity : 0;
+}
+.ui-datepicker-year,
+.ui-datepicker-month {
+  height      : inherit !important;
+  min-height  : inherit !important;
+  padding     : 0 !important;
+  font-family : $standar-font-family !important;
+  text-align  : center;
+}
+#slideShow {
+  position : absolute;
+  top      : 0;
+  right    : 0;
+  width    : 460px;
+}
+.slick-dots{
+  bottom: 0;
+}
+.slick-dots li{
+  width: 10px;
+  height: 10px;
+}
+.slick-dots li button::before {
+  opacity : 1;
+  color   : $grey-dark;
+  content : '';
+}
+.slick-dots li.slick-active button::before {
+  opacity : 1;
+  color   : $grey-base;
+}
+.question-svg, .eancode-svg, .birth-svg {
+  position   : absolute;
+  top        : 0px;
+  right      : 2px;
+  margin-top : 7px;
+  height     : 25px;
+}
+.question-svg {
+  margin-right : 10px;
+  cursor       : pointer;
+}
+.eancode-svg {
+  display      : none;
+  margin-right : 40px;
+}
+.birth-svg {
+  /*display      : block;
+  margin-top: 10px;
+  margin-left: 15px;
+  left: 0;
+  text-align: left;
+  max-width: 90px;
+  color: #7A7272;*/
+  display: none;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+/*input[name="birth"]{
+  padding-left: 100px !important;
+}*/
+::-webkit-input-placeholder {
+  color   : $grey-dark;
+  opacity : 1;
+}
+:-moz-placeholder {
+  color   : $grey-dark;
+  opacity : 1;
+}
+::-moz-placeholder {
+  color   : $grey-dark;
+  opacity : 1;
+}
+:-ms-input-placeholder {
+  color   : $grey-dark;
+  opacity : 1;
+}
+.required::-webkit-input-placeholder {
+  color   : $alert-base !important;
+  opacity : 1;
+}
+.required:-moz-placeholder {
+  color   : $alert-base !important;
+  opacity : 1;
+}
+.required::-moz-placeholder {
+  color   : $alert-base !important;
+  opacity : 1;
+}
+.required:-ms-input-placeholder {
+  color   : $alert-base !important;
+  opacity : 1;
+}
+/**
+  Download View Placeholders.
+*/
+.download-signup ::-webkit-input-placeholder {
+  color   : $transparent-grey;
+  opacity : 1;
+}
+.download-signup :-moz-placeholder {
+  color   : $transparent-grey;
+  opacity : 1;
+}
+.download-signup ::-moz-placeholder {
+  color   : $transparent-grey;
+  opacity : 1;
+}
+.download-signup :-ms-input-placeholder {
+  color   : $transparent-grey;
+  opacity : 1;
+}
+.legales-letter-spacing{
+  letter-spacing: 0.08em;
+}
+
+select.required {
+  color : $alert-base !important;
+}
+#registroWrapper .error-upload {
+  width         : 100%;
+  padding-left  : 15%;
+  padding-right : 15%;
+  margin-top    : 2%;
+}
+option.placeholder {
+  color : rgba(255, 255, 255, .5) !important;
+}
+.slick-dots li button {
+  background-image  : url("../images/desktop/empty-dot.svg");
+  background-repeat : no-repeat;
+  width             : 8px;
+  height            : 8px;
+}
+.slick-dots li.slick-active button {
+  background-image : url("../images/desktop/white-dot.svg");
+}
+#formularioWrapper{
+  font-size: 16px;
+}
+.text-margin-left{
+  padding-left: 20px !important;
+}
+.formularioWrapper-inside {
+  width : 100%;
+  .col-xs-12:first-child{
+    padding: 0 5px !important;
+  }
+  .col-xs-12.text-margin-left{
+    padding-left: 20px !important;
+  }
+}
+#legaltext a, #legaltext a:hover {
+  color           : $grey-base;
+  text-decoration : underline;
+}
+.slick-slide img {
+  width : 440px;
+}

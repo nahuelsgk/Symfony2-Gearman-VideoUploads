@@ -1,0 +1,31 @@
+<% if(isHome){ %>
+<div class="footer-home text-center animated fadeIn">
+  <img src="images/desktop/headphones.svg" alt=""/>
+  <p class="footer-home-text"><%= nav4 %></p>
+</div><% }else{ %>
+<nav class="animated fadeIn">
+  <ul>
+    <li><span id="infolbox"><%= nav1 %></span></li>
+    <li>
+      <% if(thereIsSomeCodeAvailable){%>
+      <span>
+        <img src="images/desktop/download.svg" width="20px" height="20px"/>
+        <a class="download" href="/participate/download/signup"><%= txt5 %></a>
+      </span>
+      <%}%>
+      <%= nav2 %>
+    </li>
+    <li><span id="legalbox"><%= nav3 %></span></li>
+  </ul>
+</nav>
+<div id="ean-box" class="animated fadeIn">
+  <div id="ean-box-popup">
+    <h3><%= txt2 %></h3>
+    <p><%= txt3 %></p>
+    <button id="eancode-btn" type="button" class="btn btn-default"><%= txt4 %></button>
+  </div>
+  <div id="ean-box-display">
+    <img src="images/new_botles.png" alt="Discover the 212 VIP fragrances"/>
+    <p><%= txt1 %></p>
+  </div>
+</div><% } %>

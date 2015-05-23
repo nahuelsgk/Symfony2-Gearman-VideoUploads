@@ -1,0 +1,46 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+<style>
+    .image-preview {
+        width: 320px;
+        height: 240px;
+    }
+    .preview-content {
+        width: 33%;
+        float: left;
+    }
+</style>
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	<h2>Test request preview</h2>
+	<form action="{{ path('_admin_queue_test_request_preview') }}" method="post">
+	 	{{ form_widget(form) }}
+	    <input type="submit" />
+	</form>
+<pre>
+{{ dump(results) }}
+</pre>
+
+<div class="list-images">
+    <div class="preview-content">
+        <h2>Italiano</h2>
+        {% if results.italiano is defined %}<img class="image-preview" src="{{results.italiano}}">{% endif %}
+    </div>
+    <div class="preview-content">
+        <h2>Waldengrid</h2>
+        {% if results.waldengrid is defined %}<img class="image-preview" src="{{results.waldengrid}}">{% endif %}
+    </div>
+    <div class="preview-content">
+        <h2>Lightleaks</h2>
+        {% if results.lightleaks is defined %}<img class="image-preview" src="{{results.lightleaks}}">{% endif %}
+    </div>
+</div>
+
+</div>
+{% endblock %}

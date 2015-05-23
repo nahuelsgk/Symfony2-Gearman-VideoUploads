@@ -1,0 +1,16 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<form action="{{ path('_admin_stores_new') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <input type="submit" />
+</form>
+</div>
+{% endblock %}

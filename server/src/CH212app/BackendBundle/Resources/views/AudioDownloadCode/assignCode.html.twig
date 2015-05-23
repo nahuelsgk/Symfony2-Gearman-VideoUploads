@@ -1,0 +1,14 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Assign code</h1>
+    <form action="{{ path('_admin_assign_audio_code')}}" method="POST">
+	            {{ form_widget(form) }}
+	            <button type="submit">Assign</button>
+	</form>
+</div>
+{% endblock %}

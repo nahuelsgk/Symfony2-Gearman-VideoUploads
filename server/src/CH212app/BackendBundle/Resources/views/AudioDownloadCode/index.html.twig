@@ -1,0 +1,51 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>AudioDownload Codes list</h1>
+	<ul>
+        <li>
+            <a href="{{ path('admin_audiodownloadcode_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Code</th>
+                <th>Assign</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+	    {% for entity in pagination %}
+            <tr>
+                <td><a href="{{ path('admin_audiodownloadcode_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+                <td>{{ entity.code }}</td>
+                <td>{% if entity.user is not null %}{{ entity.user.email }}{% endif %}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('admin_audiodownloadcode_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('admin_audiodownloadcode_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+	{# display navigation #}
+	<div class="navigation text-center">
+    	{{ knp_pagination_render(pagination) }}
+	</div>
+    
+</div>
+ {% endblock %}

@@ -1,0 +1,13 @@
+../.idea
+video_demo
+app/cache
+app/logs
+skeleton
+vendor
+# Parameters
+/app/config/parameters.ini
+
+# Assets and user uploads
+/server/web/bundles/
+/server/web/uploads/
+

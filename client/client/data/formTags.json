@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "tag": "default",
+    "img": "images/desktop/bg-eancode.jpg",
+    "video": "data/CH_video_form1",
+    "ext": "mp4,webm,ogv"
+  },
+  {
+    "id": "2",
+    "tag": "kiss",
+    "img": "images/desktop/itstimetokiss.jpg",
+    "video": "data/CH_video_form1",
+    "ext": "mp4,webm,ogv"
+  },
+  {
+    "id": "3",
+    "tag": "ready",
+    "img": "images/desktop/itstimetogetready.jpg",
+    "video": "data/CH_video_form2",
+    "ext": "mp4,webm,ogv"
+  },
+  {
+    "id": "4",
+    "tag": "dance",
+    "img": "images/desktop/itstimetodance.jpg",
+    "video": "data/CH_video_form3",
+    "ext": "mp4,webm,ogv"
+  },
+  {
+    "id": "5",
+    "tag": "selfie",
+    "img": "images/desktop/itstimetoselfie.jpg",
+    "video": "data/CH_video_form4",
+    "ext": "mp4,webm,ogv"
+  },
+  {
+    "id": "6",
+    "tag": "vip",
+    "img": "images/desktop/bg-eancode.jpg",
+    "video": "",
+    "ext": ""
+  },
+  {
+    "id": "7",
+    "tag": "download",
+    "img": "images/desktop/bg-eancode.jpg",
+    "video": "",
+    "ext": ""
+  },
+  {
+    "id": "8",
+    "tag": "behindScenes",
+    "img": "images/desktop/bg-eancode.jpg",
+    "video": "data/alesso/behind-scenes",
+    "ext": "mp4,webm,ogv"
+  },
+  {
+    "id": "9",
+    "tag": "collaboration",
+    "img": "images/desktop/bg-eancode.jpg",
+    "video": "data/alesso/collaboration",
+    "ext": "mp4,webm,ogv"
+  },
+  {
+    "id": "10",
+    "tag": "makingOff",
+    "img": "images/desktop/bg-eancode.jpg",
+    "video": "data/alesso/making-of",
+    "ext": "mp4,webm,ogv"
+  },
+  {
+    "id": "11",
+    "tag": "liveShow",
+    "img": "images/desktop/bg-eancode.jpg",
+    "video": "data/alesso/live-show",
+    "ext": "mp4,webm,ogv"
+  }
+]

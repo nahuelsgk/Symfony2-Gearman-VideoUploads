@@ -1,0 +1,235 @@
+$color-link : #FFFFFF;
+$color-link-hover : #999999;
+
+$font-base : 12px;
+$font-secondary : $font-base - 2;
+$font-footer : $font-base - 1;
+
+$font-family : "Helvetica W01 Light Cn", "Helvetica Neue", Helvetica, Arial;
+$font-family-bold : "Helvetica W01 Bd Cn";
+$font-family-normal : "Helvetica W01 Cn";
+$bold-neue-font : 'HelveticaNeueLTStd-BdCn';
+$light-neue-font : 'HelveticaNeueLTStd-LtCn';
+$condensed-neue-font : 'HelveticaNeueLTStdCn';
+
+@mixin transition {
+  -webkit-transition : all ease-in 0.3s;
+  transition         : all ease-in 0.3s;
+}
+@mixin rotate($degrees) {
+  -webkit-transform : rotate($degrees);
+  -ms-transform     : rotate($degrees);
+  -o-transform      : rotate($degrees);
+  transform         : rotate($degrees);
+}
+.terms { width : 420px; height : 550px; overflow-x : hidden; margin : 30px 0px 0px !important; }
+.terms h3 { color : #EBEBEB; font-size : 26px; font-family : $bold-neue-font; margin : 0; padding : 0 30px 10px 10px; text-transform : uppercase; }
+.terms h4 { color : #EBEBEB; font-size : 15px; margin : 0; padding : 10px 30px 10px 10px; text-transform : uppercase; font-family: $bold-neue-font; }
+.terms p { color : #EBEBEB; font-size : 13px; font-family : $condensed-neue-font; padding : 0 30px 0 10px; text-align : justify; }
+.terms ul li{
+  font-size : 13px;
+}
+.popup-terms { display : none; height : 400px; }
+#ch-menu {
+  background : #000000;
+  position   : fixed;
+  z-index    : 1000;
+  width      : 190px;
+  top        : 0;
+  padding    : 0 20px;
+  left       : 90px;
+
+  %menu-sp {
+    background-image  : url('http://www.carolinaherrera.com/212/common/project/img/212menu@2x.png');
+    background-repeat : no-repeat;
+    background-size   : 111px 110px;
+  }
+
+  .logo {
+    @extend %menu-sp;
+    position            : relative;
+    background-position : 0 0;
+    height              : 85px;
+    width               : 100%;
+    display             : block;
+
+    &:before {
+      content             : '';
+      position            : absolute;
+      @include rotate(180deg);
+      @extend %menu-sp;
+      background-position : -68px -92px;
+      height              : 5px;
+      width               : 9px;
+      right               : 0;
+      bottom              : 20px;
+    }
+  }
+
+  .content {
+    text-transform : uppercase;
+    padding        : 30px 0 10px;
+
+    a {
+      font-family     : $font-family;
+      font-weight     : 100;
+      color           : $color-link;
+      text-decoration : none;
+      @include transition;
+
+      b {
+        font-family : $font-family-bold;
+        font-weight : normal;
+      }
+
+      &:hover {
+        text-decoration : none;
+        color           : $color-link-hover;
+      }
+    }
+
+    ul {
+      padding : 0;
+      margin  : 0;
+
+      li {
+        list-style : none;
+        a {
+          display : block;
+        }
+
+        &.active {
+          a {
+            color : $color-link-hover;
+          }
+        }
+      }
+
+      &.primary-menu {
+        font-size : $font-base;
+        li {
+          margin-bottom : 5px;
+
+          &:last-child {
+            margin : 0;
+          }
+        }
+      }
+
+      &.secondary-menu {
+        font-size  : $font-secondary;
+        margin-top : 30px;
+
+        li.lang {
+          display : block;
+
+          > ul {
+            display : none;
+            opacity : 0;
+            @include transition;
+          }
+
+          > ul, li, a {
+            display : inline-block;
+          }
+
+          &.active > ul {
+            display : inline-block;
+            opacity : 1;
+          }
+
+        }
+
+      }
+    }
+
+    .footer {
+      margin-top  : 30px;
+      height      : 16px;
+      line-height : 18px;
+      .back {
+        float     : left;
+        font-size : $font-footer;
+
+        a {
+          position     : relative;
+          padding-left : 17px;
+
+          &:before {
+            content             : '';
+            position            : absolute;
+            @extend %menu-sp;
+            background-position : -50px -92px;
+            height              : 7px;
+            width               : 13px;
+            left                : 0;
+            bottom              : 4px;
+            @include transition;
+          }
+
+          &:hover:before {
+            opacity : 0.8;
+          }
+        }
+      }
+
+      ul {
+        float : right;
+
+        li {
+          display     : inline-block;
+          float       : left;
+          margin-left : 20px;
+          position    : relative;
+
+          a {
+            display : block;
+            height  : 16px;
+            @extend %menu-sp;
+
+            &:hover {
+              opacity : 0.5;
+            }
+          }
+
+          &.facebook a {
+            width               : 8px;
+            background-position : 0 -92px;
+          }
+
+          &.youtube a {
+            width               : 16px;
+            background-position : -12px -92px;
+          }
+
+          &.instagram a {
+            width               : 13px;
+            background-position : -32px -90px;
+          }
+
+          &:before {
+            content    : '|';
+            color      : $color-link;
+            position   : absolute;
+            left       : -11px;
+            top        : 50%;
+            margin-top : -7px;
+          }
+
+          &:first-child:before {
+            content : none;
+          }
+        }
+      }
+    }
+  }
+
+  &.open .logo:before {
+    @include rotate(0deg);
+  }
+
+}
+
+
+
+

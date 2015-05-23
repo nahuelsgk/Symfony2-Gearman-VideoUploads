@@ -1,0 +1,72 @@
+<!-- CH212 global menu -->
+<div id="ch-menu" class="open">
+  <div class="logo pointer">
+  </div>
+  <a id="logoUrl" data-bypass target="_blank" href="http://www.carolinaherrera.com/212/<%= locale %>/"></a>
+  <div class="content" style="display: none;">
+    <ul class="primary-menu">
+      <li class="212-menu-nyc"><a href="http://www.carolinaherrera.com/212/<%= locale %>/nyc" data-bypass data-tracking="212 NYC"><b>212</b> NYC</a></li>
+      <li class="212-menu-sexy"><a href="http://www.carolinaherrera.com/212/<%= locale %>/sexy" data-bypass data-tracking="212 SEXY"><b>212</b> Sexy</a></li>
+      <li class="212-menu-vip"><a href="http://www.carolinaherrera.com/212/<%= locale %>/vip" data-bypass data-tracking="212 VIP"><b>212</b> VIP</a></li>
+      <li class="212-menu-vip-rose"><a href="http://www.carolinaherrera.com/212/<%= locale %>/vip-rose" data-bypass data-tracking="212 VIP ROSE"><b>212</b> VIP ROSÉ</a></li>
+      <li class="212-menu-vip-club-edition"><a href="http://www.carolinaherrera.com/212/<%= locale %>/vip-club-edition" data-bypass data-tracking="212 VIP CLUB EDITION"><b>212</b> VIP CLUB EDITION</a></li>
+      <li class="212-menu-socialhub"><a href="http://www.carolinaherrera.com/212/<%= locale %>/socialhub" data-bypass data-tracking="Social Hub">Social Hub</a></li>
+    </ul>
+    <ul class="secondary-menu">
+      <li class="lang">
+        <a id="idioma" href="#">Idioma: <%= locale %></a>
+        <ul>
+          <% if(locale != "es"){ %>
+          <li><a class="locale" id="es" data-bypass >ES</a></li>
+          <% } %> <% if(locale != "en"){ %>
+          <li><a class="locale" id="en" data-bypass>EN</a></li>
+          <% } %> <% if(locale != "pt"){ %>
+          <li><a class="locale" id="pt" data-bypass>PT</a></li>
+          <% } %>
+        </ul>
+      </li>
+      <% if(locale == "es"){ %>
+      <li><a data-bypass href="http://www.carolinaherrera.com/212/es/suscribiete" class="suscribe" target="_blank">Suscríbete</a></li>
+      <li><a data-bypass href="http://www.carolinaherrera.com/212/es/contacto" class="contact" target="_blank">Contacto</a></li>
+      <li><a data-bypass href="http://www.puig.com/" target="_blank">Puig</a></li>
+      <li><a data-bypass href="http://www.carolinaherrera.com/212/es/terminos" class="terminos" target="_blank">Términos</a></li>
+      <% } else if(locale == "en"){ %>
+      <li><a data-bypass href="http://www.carolinaherrera.com/212/en/subscribe" class="suscribe" target="_blank">Subscribe</a></li>
+      <li><a data-bypass href="http://www.carolinaherrera.com/212/en/contact" class="contact" target="_blank">Contact</a></li>
+      <li><a data-bypass href="http://www.puig.com/" target="_blank">Puig</a></li>
+      <li><a data-bypass href="http://www.carolinaherrera.com/212/en/terms" class="terminos" target="_blank">Terms</a></li>
+      <% } else if(locale == "pt"){ %>
+      <li><a data-bypass href="http://www.carolinaherrera.com/212/pt/inscrevase" class="suscribe" target="_blank">Inscrevase</a></li>
+      <li><a data-bypass href="http://www.carolinaherrera.com/212/pt/contacto" class="contact" target="_blank">Contacto</a></li>
+      <li><a data-bypass href="http://www.puig.com/" target="_blank">Puig</a></li>
+      <li><a data-bypass href="http://www.carolinaherrera.com/212/pt/termos" class="terminos" target="_blank">Termos</a></li>
+      <% } %>
+    </ul>
+    <div class="footer">
+      <div class="back">
+        <% if(locale == "es"){ %>
+        <a href="http://www.carolinaherrera.com/es/" data-bypass data-tracking="Home">Inicio</a>
+        <% } else if(locale == "en"){ %>
+        <a href="http://www.carolinaherrera.com/en/" data-bypass data-tracking="Home">Home</a>
+        <% } else if(locale == "pt"){ %>
+        <a href="http://www.carolinaherrera.com/pt/" data-bypass data-tracking="Home">Início</a>
+        <% } %>
+      </div>
+      <ul>
+        <li class="facebook"><a data-bypass data-tracking="Facebook" target="_blank" title="Síguenos en Facebook" href="https://www.facebook.com/212CarolinaHerrera"></a></li>
+        <li class="youtube"><a data-bypass data-tracking="Youtube" target="_blank" title="Síguenos en YouTube" href="http://www.youtube.com/user/212VIPFragrance/custom"></a></li>
+        <li class="instagram"><a data-bypass data-tracking="Instagram" target="_blank" title="Síguenos en Instagram" href="http://instagram.com/212carolinaherrera"></a></li>
+      </ul>
+    </div>
+  </div>
+</div><!-- /CH212 global menu -->
+<div id="logo-box">
+  <a href="timeline"><img src="images/desktop/alesso.svg" alt="Alesso for 212 VIP Club Edition"/></a>
+</div>
+<nav>
+  <ul>
+    <% if( btnHeader) {%>
+      <li class="botcerrar"><img src="images/desktop/back.<%=btnHeader.imgType%>.<%=locale%>.svg" width="60px" height="60px"/></li>
+    <% } %>
+  </ul>
+</nav>

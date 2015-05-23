@@ -1,0 +1,17 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<div class="container">
+<center>
+{% if thank_you == false %}
+<h2>Do you want to unsuscribe?</h2>
+Hello, {{name}}
+<form action="{{path('_public_user_unsuscribe', {user_token: user_token})}}" method="post">
+    <input type="submit" name="submit" value="Unsuscribe" />
+</form>
+</div>
+{% else %}
+<h1>Thank you, {{name}}. You have been unsuscribe.
+{% endif %}
+</center>
+{% endblock %}

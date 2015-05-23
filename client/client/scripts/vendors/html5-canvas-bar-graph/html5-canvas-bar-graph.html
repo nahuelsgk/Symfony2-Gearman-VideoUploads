@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<head>
+	<title>HTML5 Bar Graph Example</title>
+</head>
+
+<body>
+	<div id="graphDiv1"></div>
+	<br />
+	<div id="graphDiv2"></div>
+	<!--[if IE]><script src="excanvas.js"></script><![endif]-->
+	<script src="html5-canvas-bar-graph.js"></script>
+	<script>(function () {
+
+		function createCanvas(divName) {
+
+			var div = document.getElementById(divName);
+			var canvas = document.createElement('canvas');
+			div.appendChild(canvas);
+			if (typeof G_vmlCanvasManager != 'undefined') {
+				canvas = G_vmlCanvasManager.initElement(canvas);
+			}
+			var ctx = canvas.getContext("2d");
+			return ctx;
+		}
+
+		/*var ctx = createCanvas("graphDiv1");
+
+		var graph = new BarGraph(ctx);
+		graph.maxValue = 30;
+		graph.margin = 2;
+    graph.colors = ["#a67a12"];
+		graph.xAxisLabelArr = ["North", "East", "West", "South"];
+		setInterval(function () {
+			graph.update([Math.random() * 30, Math.random() * 30, Math.random() * 30, Math.random() * 30]);
+		}, 1000);*/
+
+		var ctx2 = createCanvas("graphDiv2");
+
+		var graph2 = new BarGraph(ctx2);
+		graph2.margin = 1;
+		graph2.width = 1300;
+		graph2.height = 80;
+		graph2.backgroundColor = "rgba(0, 0, 255, 0.1)";
+    graph2.colors = ["#a67a12","#ccc"];
+
+		setInterval(function () {
+			graph2.update(
+        [
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20,
+          Math.random() * 20
+        ]);
+		}, 200);
+
+	}());</script>
+</body>
+</html>

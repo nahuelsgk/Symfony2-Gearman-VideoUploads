@@ -1,0 +1,49 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h2>Users list</h2>
+<table class="table table-condensed">
+<thead>
+<th>#</th>
+<th>Name</th>
+<th>Surname</th>
+<th>Email</th>
+<th>Zipcode</th>
+<th>Country</th>
+<th>Hotspot</th>
+<th>Date of birth</th>
+<th>Store Selected</td>
+<th>EAN Codes Used</th>
+<th>Locale</th>
+<th>Audio Email sent</th>
+</thead>
+{% for user in pagination %}
+<tr>
+	<td><a href="{{ path('_admin_user_profile',{user_id:user.id}) }}">{{user.id}}</a></td>
+	<td>{{user.name}}</td>
+	<td>{{user.surname}}</td>
+	<td>{{user.email}}</td>
+	<td>{{user.zipcode}}</td>
+	<td>{{user.country}}</td>
+	<td>{{user.hotSpot}}</td>
+	<td>{% if user.dateBirth != null %}{{user.dateBirth | date("d-m-Y")}}{% endif %}</td>
+	<td>{% if user.store is not null %}{{user.store.address}}{% endif %}</td>
+	<td>
+		{% for eancode in user.eanCodesUsed %}
+			{{eancode.codeUsed}}<br>
+		{% endfor %}
+	</td>
+	<td>{{user.locale}}</td>
+	<td>{% if user.audiodownloadcode is not null %}{{user.audiodownloadcode.code}}{% endif %}</td>
+<tr>
+{% endfor %}
+</table>
+{# display navigation #}
+<div class="navigation">
+    {{ knp_pagination_render(pagination) }}
+</div>
+{% endblock %}

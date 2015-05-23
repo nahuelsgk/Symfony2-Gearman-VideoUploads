@@ -1,0 +1,89 @@
+
+ul.social-list li {
+  margin-left : 30px;
+}
+ul.social-list {
+  list-style : none;
+  display    : -webkit-inline-flex;
+  display    : -ms-inline-flexbox;
+  display    : inline-flex;
+  padding    : 0;
+  font-size  : 2em;
+  margin     : 0 0 0 -30px;
+}
+@mixin social-icon() {
+  height          : $social-icon-height;
+  width           : $social-icon-width;
+  cursor          : pointer;
+  background-size : 1.2em;
+}
+.s-facebook {
+  background : url('../images/desktop/facebook-off.svg') no-repeat;
+  @include social-icon();
+}
+.s-facebook:hover {
+  background : url('../images/desktop/facebook.svg') no-repeat;
+  @include social-icon();
+}
+.s-twitter {
+  background : url('../images/desktop/twitter-off.svg') no-repeat;
+  @include social-icon();
+}
+.s-twitter:hover {
+  background : url('../images/desktop/twitter.svg') no-repeat;
+  @include social-icon();
+}
+.s-pinterest {
+  background : url('../images/desktop/pinterest-off.svg') no-repeat;
+  @include social-icon();
+}
+.s-pinterest:hover {
+  background : url('../images/desktop/pinterest.svg') no-repeat;
+  @include social-icon();
+}
+.s-instagram {
+  background : url('../images/desktop/instagram-off.svg') no-repeat;
+  @include social-icon();
+}
+.s-instagram:hover {
+  background : url('../images/desktop/instagram.svg') no-repeat;
+  @include social-icon();
+}
+
+.s-gplus {
+  background : url('../images/desktop/google-plus-off.svg') no-repeat;
+  @include social-icon();
+}
+.s-gplus:hover {
+  background : url('../images/desktop/google-plus.svg') no-repeat;
+  @include social-icon();
+}
+
+.social-list.small-socials {
+  li{
+    margin-left : 15px !important;
+    cursor: pointer;
+  }
+}
+
+.small-socials {
+
+  .small-facebook{
+    background : url('../images/desktop/fb.png') no-repeat;
+    width: 18px;
+    height: 18px;
+  }
+  .small-twitter{
+    background : url('../images/desktop/tw.png') no-repeat;
+    width: 18px;
+    height: 18px;
+  }
+  .small-pinterest{}
+
+  .small-gplus{
+    background : url('../images/desktop/g+.png') no-repeat;
+    width: 18px;
+    height: 18px;
+  }
+}
+

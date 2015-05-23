@@ -1,0 +1,16 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1>Confirmation video by user</h1>
+<p>You are about to approve the video. Just click the links or copy-paste the link in other browser to test security bypass. This is test view for test the links.</p>
+<a href="{{relative_link_to_confirm}}">Link relative</a><br>
+<a href="{{absolute_link_to_confirm}}">Absolute relative</a>
+</div>
+{% endblock %}

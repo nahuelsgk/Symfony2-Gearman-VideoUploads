@@ -1,0 +1,26 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     
+    database_port:     ~
+    database_name:     
+    database_user:     
+    database_password: 
+    #database_host:     localhost
+    #database_port:     ~
+    #database_name:     symfony
+    #database_user:     root
+    #database_password: root
+
+    mailer_transport:  smtp
+    mailer_host:       127.0.0.1
+    mailer_user:       ~
+    mailer_password:   ~
+
+    locale:            en
+    secret:            ThisTokenIsNotSoSecretChangeIt
+
+    public_app_url: http://212vip.loc
+    scripts:                     /var/www/vhosts/212vip.linkemann.net/httpdocs/
+    web_folder_videos_root:      /var/www/vhosts/dev.linkemann.net/httpdocs/212vip/server/web/
+    video_renderer_config_path:  /var/www/vhosts/212vip.linkemann.net/httpdocs/config.sh
+    

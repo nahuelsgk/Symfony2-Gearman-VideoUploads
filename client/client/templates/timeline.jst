@@ -1,0 +1,62 @@
+<div class="col-xs-12 wrapper-text title-ecualizador" style="opacity: 0;">
+  <h2 class="nobold"><%= t3 %></h2>
+  <p class="subtitle"><%= t4 %></p>
+</div>
+<div class="timeline">
+  <div class="col-xs-2 controls clearfix">
+    <div class="switch-control">
+      <div class="timeline active"><a href="/timeline"><%= t1 %></a></div>
+      <div class="swtich"><input type="checkbox" name="switch-control" checked data-on-text="" checked data-off-text="" data-inverse="true"></div>
+      <div class="ecualizador"><a href="/ecualizador"><%= t2 %></a></div>
+    </div>
+      <span class="pull-right control-video video-<%= buttonState %>">
+          <img src="images/bot_timeline_<%= buttonState %>.png" alt="Pause Video"/>
+      </span>
+  </div>
+  <div class="col-xs-10 line">
+    <div class="wrapper-timeline clearfix">
+      <div class="inner-timeline-base"></div>
+      <div class="inner-timeline"></div>
+      <div class="hot-spots-wrapper pull-left">
+        <% _.each(hotSpots,function(hotspot){ %>
+        <div id="<%= hotspot.id %>" class="hot-spot" style="margin-left:<%= hotspot.position %>%">
+          <% if (hotspot.type == 'drop-up') {%>
+            <a href="/project"><div class="wrapper-hot-spot-img img-circle"><img class="hot-spot-img img-circle grayscale" src="<%= hotspot.img %>" alt=""/></div></a>
+          <% } else {%>
+            <div class="wrapper-hot-spot-img img-circle"><img class="hot-spot-img img-circle grayscale" src="<%= hotspot.img %>" alt=""/></div>
+          <% } %>
+          <p class="hot-spot-text"><%= hotspot.text[0][locale] %></p>
+          <% if (hotspot.type == 'drop-up') {%>
+          <ul class="wrapper-subpoints">
+            <%_.each(hotspot.subPoints,function(point){%>
+            <li data-value="<%= point.url %>" class="subpoint">
+              <a  data-bypass>
+                <img class="subpoint-img img-circle" src="<%= point.imgUrl %>" alt=""/>
+                <p class="subpoint-text"><%= point.text[0][locale] %></p>
+              </a>
+              <span class="vertical-line"></span>
+            </li>
+            <% })%>
+          </ul>
+          <% } %>
+        </div>
+        <% }); %>
+      </div>
+  </div>
+  </div>
+</div>
+<%= sizmekCode %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

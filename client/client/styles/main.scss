@@ -1,0 +1,28 @@
+// Main Stylesheet
+//
+// Main styles files
+// Injects all bower_component files automatically
+// bower:scss
+@import "../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+// Injects all import files automatically
+// [injector]
+@import '_212menu';
+@import '__fonts';
+@import '__variables';
+@import '_common';
+@import 'datepicker_overwrite';
+@import 'ecualizador';
+@import 'gallery';
+@import 'legal';
+@import 'participate';
+@import 'project';
+@import 'signup';
+@import 'social_buttons';
+@import 'timeline';
+@import 'upload_video';
+@import 'video_configuration';
+@import 'video_confirmation';
+@import 'zMobile';
+@import 'zfancybox';
+// [endinjector]

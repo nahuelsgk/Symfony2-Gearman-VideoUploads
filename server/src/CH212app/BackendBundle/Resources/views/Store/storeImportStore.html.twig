@@ -1,0 +1,58 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+<style>
+* {
+ padding:0;
+  margin:0
+}
+dl {
+ width:100%;
+ overflow:hidden;
+ background:#eee;
+}
+dt {
+ float:left;
+ width:30%; /* adjust the width; make sure the total of both is 100% */
+}
+dd {
+ float:left;
+ width:70%; /* adjust the width; make sure the total of both is 100% */
+}
+</style>
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1>Import stores from CSV</h1>
+<h2>Requeriments</h2>
+<dl>
+<dt>Charset:</dt><dd>UTF-8</dd>
+<dt>Separator:</dt><dd> ;</dd>
+<dt>Enclosure:</dt><dd> "</dd>
+<dt>Headers</dt><dd>No headers!</dd>
+<dt>Format row:</dt><dd> "store_name" ; "address" ; "zipcode" ; "country"</dd>
+<dt>Exemple row:</dt><dd> "Aeropuerto" ; "  Aeropuerto del Prat. T 1 - LOCAL 79" ; "08820" ; "ES"</dd>
+<dt>This process don't delete stores;</dt><dd> just add stores. Becareful with duplications.</dd>
+</dl>
+
+<h2>Form</h2>
+<form action="{{ path('_admin_store_import_batch') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <input type="submit" />
+</form>
+
+{% if log|length > 0 %}
+<h2>Raw log</h2>
+<b>Remember to run the batch that resolves geolocation after this process</b>
+<pre>
+{{ dump(log) }}
+</pre>
+<b>Remember to run the batch that resolves geolocation after this process</b>
+{% endif %}
+
+</div>
+{% endblock %}

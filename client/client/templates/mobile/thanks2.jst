@@ -1,0 +1,19 @@
+<% if(isDownloadAudio){ %>
+<div class="container-content container-thanks container-content-download participate">
+  <h1><%= title %></h1>
+  <p class="subtitle"><%= thisIsYourDownloadCode %></p>
+  <p class="subtitle"><strong><%= userCode %></strong></p>
+  <p class="subtitle"><%= enjoyTheSong %></p>
+  <div class="wrapper-participate">
+    <p>
+      <a  target="_blank" href="http://www.umgmusic.com/alesso/" type="button" class="btn btn-default" data-bypass><%= downloadSong %></a>
+    </p>
+  </div>
+</div>
+<% } else{ %>
+<div class="container-content container-thanks container-content-thanks participate">
+  <h1><strong><%= title %></strong></h1>
+  <p class="subtitle"><%= p1 %></p>
+  <div class="social"></div>
+</div>
+<% } %>

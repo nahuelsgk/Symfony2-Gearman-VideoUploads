@@ -1,0 +1,95 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+    <style>
+        ul.no-style {
+            list-style : none;
+        }
+        .col-2 {
+            width : 50%;
+            float : left;
+        }
+        .col-3 {
+            width : 33%;
+            float : left;
+        }
+        .col-4 {
+            width : 25%;
+            float : left;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1>Dashboard</h1>
+        <div class="filter navbar-default navbar-collapse" style="padding: 10px 5px 5px 5px">
+            <form>
+            <div class="col-4 text-center">
+                <label for="country">País:</label>
+                <select id="country" name="country">
+                    <option value="">Todos ({{ user.total }})</option>
+                    {% for country in countries %}
+                        <option {% if country[0]==filter.country %}selected="selected"{% endif %} value="{{ country[0] }}">{{ country[0] }} ({{ country[1] }})</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-4 text-center">
+                <label for="dateIni">Desde:</label>
+                <input id="dateIni" name="date-ini" type="date" placeholder="YYYY-MM-DD" value="{{ filter.date_ini }}">
+            </div>
+            <div class="col-4 text-center">
+                <label for="dateOut">Hasta:</label>
+                <input id="dateOut" name="date-out" type="date" placeholder="YYYY-MM-DD" value="{{ filter.date_out }}">
+            </div>
+            <div class="col-4 text-center">
+                <input id="boton" type="submit" value="Filtrar">
+            </div>
+            </form>
+        </div>
+        <div>
+            <div class="col-2">
+                <h3>Usuarios</h3>
+                <ul class="no-style">
+                    <li>Total - {{ user.total }}</li>
+                    <li>Edad
+                        <ul>
+                            <li>Menos de 25 - {{ user.age.under_25 }}</li>
+                            <li>Entre 25 y 30 - {{ user.age.between_25_30 }}</li>
+                            <li>Entre 31 y 35 - {{ user.age.between_31_35 }}</li>
+                            <li>Más de 35 - {{ user.age.beyond_35 }}</li>
+                        </ul>
+                    </li>
+                    <li>Idioma
+                        <ul>
+                            <li>English - {{ user.language.english }}</li>
+                            <li>Español - {{ user.language.spanish }}</li>
+                            <li>Portugués - {{ user.language.portuguese }}</li>
+                        </ul>
+                    </li>
+                    <li>Retos
+                        <ul>
+                            <li>Video - {{ user.challenges.video }}</li>
+                            <li>Reward - {{ user.challenges.reward }}</li>
+                            <li>EAN code - {{ user.challenges.ean }}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h3>Vídeos</h3>
+                <ul class="no-style">
+                    <li>Total - {{ videos.total }}</li>
+                    <li>Hotspot
+                        <ul>
+                            <li>Kiss - {{ videos.hotspot.kiss }}</li>
+                            <li>Get ready - {{ videos.hotspot.get_ready }}</li>
+                            <li>Dance - {{ videos.hotspot.dance }}</li>
+                            <li>Selfie - {{ videos.hotspot.selfie }}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

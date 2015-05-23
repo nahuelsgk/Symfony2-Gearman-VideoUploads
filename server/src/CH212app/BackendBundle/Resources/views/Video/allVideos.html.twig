@@ -1,0 +1,36 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+<script type"type/javascript">
+function confirmAction(message){
+	var answer = confirm(message);
+	if (answer == true) return true;
+	else return false;
+	
+	return false;
+}
+</script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h2>{{title_video_list_view}}: {{ pagination.getTotalItemCount }} videos</h2>
+
+{# display navigation #}
+<div class="navigation text-center">
+    {{ knp_pagination_render(pagination) }}
+</div>
+</div>
+{% include 'BackendBundle:Video:partials/videoTableList-template.html.twig' %}
+
+<div class="container">
+{# display navigation #}
+<div class="navigation text-center">
+    {{ knp_pagination_render(pagination) }}
+</div>
+</div>
+{% endblock %}
+

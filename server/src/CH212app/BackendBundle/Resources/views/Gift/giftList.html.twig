@@ -1,0 +1,47 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<table class="table table-condensed">
+<thead>
+  <th>Id</th>
+  <th>Country</th>
+  <th>Gift</th>
+  <th>Enable</th>
+  <th>Actions</th>
+<thead>
+{% for gift in gifts %}
+<tr
+  {% if gift.active == false %} class="danger"{% endif %}
+  {% if gift.active == true %} class="success"{% endif %}
+>
+ <td>{{gift.id}}</td>
+ <td>{{gift.country}}</td>
+ <td>{{gift.gift}}</td>
+ <td>{{gift.active}}</td>
+ <td>
+  {% if gift.active == true %}
+  <a title="Reject" href="{{path('_admin_gift_disable', {'gift_id': gift.id})}}" onClick="return confirmAction('You are about to disable this gift. Do you want to continue?');">
+   	<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+   </a>
+  {% endif %}
+  {% if gift.active == false %}
+  	<a title="Approve" href="{{path('_admin_gift_enable', {'gift_id': gift.id})}}" onClick="return confirmAction('You are about to enable this gift.Do you want to continue?');">
+  	 <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+   </a>
+  {% endif %}
+  
+  <a title="Remove" href="{{path('_admin_gift_remove', {'gift_id': gift.id})}}" onClick="return confirmAction('You are about to remove this gift. This can not be undone. Do you want to continue?');">
+  	 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+   </a>
+   
+  </td>
+  
+</tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}

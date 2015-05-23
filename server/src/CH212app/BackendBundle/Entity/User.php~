@@ -1,0 +1,479 @@
+<?php
+// src/Acme/UserBundle/Entity/User.php
+namespace CH212app\BackendBundle\Entity;
+
+use FOS\UserBundle\Entity\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="usuarios")
+ */
+class User extends BaseUser
+{
+	/**
+	 * @ORM\Id
+	 * @ORM\Column(type="integer")
+	 * @ORM\GeneratedValue(strategy="AUTO")
+	 */
+	protected $id;
+	
+	/**
+	 * @ORM\OneToMany(targetEntity="CH212app\BackendBundle\Entity\Video", mappedBy="user", cascade={"persist", "remove"})
+	 */
+	protected $videos;
+	
+	/**
+	 * @ORM\ManyToOne(targetEntity="CH212app\BackendBundle\Entity\Store")
+	 * @ORM\JoinColumn(name="store_id", referencedColumnName="id", nullable=true) 
+	 */
+	protected $store;
+	
+	/**
+	 * @ORM\Column(type="string", nullable=true)
+	 * @var unknown
+	 */
+	protected $hotSpot;
+	
+	/**
+	 * @ORM\Column(type="string", length=25, nullable=true)
+	 */
+	protected $name;
+	
+	/**
+	 * @ORM\Column(type="string", length=25, nullable=true)
+	 */
+	protected $surname;
+	
+	/**
+ 	 * @ORM\Column(type="date", nullable=true)
+	 */
+	protected $dateBirth;
+	
+	/**
+	 * @ORM\Column(type="string", length=255, nullable=true)
+	 * @var unknown
+	 */
+	protected $zipcode;
+	
+	/**
+	 * @ORM\Column(type="string", length=10, nullable=true)
+	 */
+	private $country;
+	
+	/**
+	 * @ORM\Column(type="string", length=255, nullable=true)
+	 */
+	private $countryLong;
+	
+	/**
+	 * @ORM\OneToMany(targetEntity="CH212app\BackendBundle\Entity\EANCodeUsed", mappedBy="user", cascade={"persist", "remove"})
+	 */
+	protected $eanCodesUsed;
+	
+	/**
+	 * @ORM\Column(type="string", length=10, nullable=true)
+	 */
+	protected $locale;
+	
+	/**
+	 * @ORM\OneToOne(targetEntity="CH212app\BackendBundle\Entity\AudioDownloadCode", mappedBy="user", cascade={"remove"})
+	 */
+	private $audiodownloadcode;
+	
+	/**
+	 * @ORM\Column(type="datetime", nullable=true)
+	 */
+	private $created;
+	
+	/**
+	 * @ORM\Column(type="datetime", nullable=true)
+	 */
+	private $unsuscribe;
+	
+	/**
+	 * @ORM\Column(type="string", length=255, nullable=true)
+	 */
+	private $ip;
+	
+	public function __construct()
+	{
+		parent::__construct();
+		// your own logic
+	}
+
+    /**
+     * Get id
+     *
+     * @return integer 
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Add videos
+     *
+     * @param \CH212app\BackendBundle\Entity\Video $videos
+     * @return User
+     */
+    public function addVideo(\CH212app\BackendBundle\Entity\Video $videos)
+    {
+        $this->videos[] = $videos;
+    
+        return $this;
+    }
+
+    /**
+     * Remove videos
+     *
+     * @param \CH212app\BackendBundle\Entity\Video $videos
+     */
+    public function removeVideo(\CH212app\BackendBundle\Entity\Video $videos)
+    {
+        $this->videos->removeElement($videos);
+    }
+
+    /**
+     * Get videos
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getVideos()
+    {
+        return $this->videos;
+    }
+    
+    /**
+     * Set name
+     *
+     * @param string $name
+     * @return User
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+    /**
+     * Get name
+     *
+     * @return string 
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Set surname
+     *
+     * @param string $surname
+     * @return User
+     */
+    public function setSurname($surname)
+    {
+        $this->surname = $surname;
+
+        return $this;
+    }
+
+    /**
+     * Get surname
+     *
+     * @return string 
+     */
+    public function getSurname()
+    {
+        return $this->surname;
+    }
+
+    /**
+     * Set dateBirth
+     *
+     * @param \DateTime $dateBirth
+     * @return User
+     */
+    public function setDateBirth($dateBirth)
+    {
+        $this->dateBirth = $dateBirth;
+
+        return $this;
+    }
+
+    /**
+     * Get dateBirth
+     *
+     * @return \DateTime 
+     */
+    public function getDateBirth()
+    {
+        return $this->dateBirth;
+    }
+
+    /**
+     * Set zipcode
+     *
+     * @param string $zipcode
+     * @return User
+     */
+    public function setZipcode($zipcode)
+    {
+        $this->zipcode = $zipcode;
+
+        return $this;
+    }
+
+    /**
+     * Get zipcode
+     *
+     * @return string 
+     */
+    public function getZipcode()
+    {
+        return $this->zipcode;
+    }
+
+    /**
+     * Set store
+     *
+     * @param \CH212app\BackendBundle\Entity\Store $store
+     * @return User
+     */
+    public function setStore(\CH212app\BackendBundle\Entity\Store $store = null)
+    {
+        $this->store = $store;
+
+        return $this;
+    }
+
+    /**
+     * Get store
+     *
+     * @return \CH212app\BackendBundle\Entity\Store 
+     */
+    public function getStore()
+    {
+        return $this->store;
+    }
+
+    /**
+     * Add eanCodesUsed
+     *
+     * @param \CH212app\BackendBundle\Entity\EANCodeUsed $eanCodesUsed
+     * @return User
+     */
+    public function addEanCodesUsed(\CH212app\BackendBundle\Entity\EANCodeUsed $eanCodesUsed)
+    {
+        $this->eanCodesUsed[] = $eanCodesUsed;
+
+        return $this;
+    }
+
+    /**
+     * Remove eanCodesUsed
+     *
+     * @param \CH212app\BackendBundle\Entity\EANCodeUsed $eanCodesUsed
+     */
+    public function removeEanCodesUsed(\CH212app\BackendBundle\Entity\EANCodeUsed $eanCodesUsed)
+    {
+        $this->eanCodesUsed->removeElement($eanCodesUsed);
+    }
+
+    /**
+     * Get eanCodesUsed
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getEanCodesUsed()
+    {
+        return $this->eanCodesUsed;
+    }
+
+    /**
+     * Set country
+     *
+     * @param string $country
+     * @return User
+     */
+    public function setCountry($country)
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    /**
+     * Get country
+     *
+     * @return string 
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * Set locale
+     *
+     * @param string $locale
+     * @return User
+     */
+    public function setLocale($locale)
+    {
+        $this->locale = $locale;
+
+        return $this;
+    }
+
+    /**
+     * Get locale
+     *
+     * @return string 
+     */
+    public function getLocale()
+    {
+        return $this->locale;
+    }
+
+    /**
+     * Set hotSpot
+     *
+     * @param string $hotSpot
+     * @return User
+     */
+    public function setHotSpot($hotSpot)
+    {
+        $this->hotSpot = $hotSpot;
+
+        return $this;
+    }
+
+    /**
+     * Get hotSpot
+     *
+     * @return string 
+     */
+    public function getHotSpot()
+    {
+        return $this->hotSpot;
+    }
+
+    /**
+     * Set audioEmailSent
+     *
+     * @param boolean $audioEmailSent
+     * @return User
+     */
+    public function setAudioEmailSent($audioEmailSent)
+    {
+        $this->audioEmailSent = $audioEmailSent;
+
+        return $this;
+    }
+
+    /**
+     * Get audioEmailSent
+     *
+     * @return boolean 
+     */
+    public function getAudioEmailSent()
+    {
+        return $this->audioEmailSent;
+    }
+
+    /**
+     * Set audiodownloadcode
+     *
+     * @param \CH212app\BackendBundle\Entity\AudioDownloadCode $audiodownloadcode
+     * @return User
+     */
+    public function setAudiodownloadcode(\CH212app\BackendBundle\Entity\AudioDownloadCode $audiodownloadcode = null)
+    {
+        $this->audiodownloadcode = $audiodownloadcode;
+
+        return $this;
+    }
+
+    /**
+     * Get audiodownloadcode
+     *
+     * @return \CH212app\BackendBundle\Entity\AudioDownloadCode 
+     */
+    public function getAudiodownloadcode()
+    {
+        return $this->audiodownloadcode;
+    }
+
+    /**
+     * Set countryLong
+     *
+     * @param string $countryLong
+     * @return User
+     */
+    public function setCountryLong($countryLong)
+    {
+        $this->countryLong = $countryLong;
+
+        return $this;
+    }
+
+    /**
+     * Get countryLong
+     *
+     * @return string 
+     */
+    public function getCountryLong()
+    {
+        return $this->countryLong;
+    }
+
+    /**
+     * Set created
+     *
+     * @param \DateTime $created
+     * @return User
+     */
+    public function setCreated($created)
+    {
+        $this->created = $created;
+
+        return $this;
+    }
+
+    /**
+     * Get created
+     *
+     * @return \DateTime 
+     */
+    public function getCreated()
+    {
+        return $this->created;
+    }
+
+    /**
+     * Set unsuscribe
+     *
+     * @param \DateTime $unsuscribe
+     * @return User
+     */
+    public function setUnsuscribe($unsuscribe)
+    {
+        $this->unsuscribe = $unsuscribe;
+
+        return $this;
+    }
+
+    /**
+     * Get unsuscribe
+     *
+     * @return \DateTime 
+     */
+    public function getUnsuscribe()
+    {
+        return $this->unsuscribe;
+    }
+}

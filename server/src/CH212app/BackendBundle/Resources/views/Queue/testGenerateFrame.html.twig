@@ -1,0 +1,21 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	<h2>Test generate preview</h2>
+	<form action="{{ path('_admin_queue_test_preview') }}" method="post">
+	 	{{ form_widget(form) }}
+	    <input type="submit" />
+	</form>
+	<h2>Results</h2>
+	<span>This sends 3 jobs: three real previews.</span>
+	<pre>{{ dump(results) }}</pre>
+</div>
+
+{% endblock %}

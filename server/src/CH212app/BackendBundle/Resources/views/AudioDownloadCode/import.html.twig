@@ -1,0 +1,55 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+<style>
+* {
+ padding:0;
+  margin:0
+}
+dl {
+ width:100%;
+ overflow:hidden;
+ background:#eee;
+}
+dt {
+ float:left;
+ width:30%; /* adjust the width; make sure the total of both is 100% */
+}
+dd {
+ float:left;
+ width:70%; /* adjust the width; make sure the total of both is 100% */
+}
+</style>
+{% endblock %}
+
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h2>Requeriments</h2>
+<dl>
+<dt>Charset:</dt><dd>UTF-8</dd>
+<dt>Separator:</dt><dd> ;</dd>
+<dt>Enclosure:</dt><dd> "</dd>
+<dt>Headers</dt><dd>No headers!</dd>
+<dt>Format row:</dt><dd> "audio download code" ; </dd>
+<dt>Exemple row:</dt><dd> "AXV!W!QW#" ; </dd>
+<dt>This process don't delete stores;</dt><dd> just add stores. Becareful with duplications.</dd>
+</dl>
+
+<h2>Form</h2>
+<form action="{{ path('_admin_downloadcode_import') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <input type="submit" />
+</form>
+
+{% if log|length > 0 %}
+<h2>Raw log</h2>
+<pre>
+{{ dump(log) }}
+</pre>
+{% endif %}
+
+{% endblock body %}

@@ -1,0 +1,25 @@
+// Participate styles
+
+.wrapper-participate {
+  margin-top    : 25px;
+  margin-bottom : 40px;
+}
+.wrapper-participate button {
+  margin : 0 10px;
+}
+.timeline button {
+  margin : 0 10px;
+}
+.box-participate {
+  padding-top : 30px;
+  text-align  : center;
+}
+.participate{
+  h1{
+    font-family: $light-neue-font;
+    letter-spacing: 0.15em;
+    strong{
+      font-family: $bold-neue-font;
+    }
+  }
+}

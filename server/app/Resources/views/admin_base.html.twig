@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div class="container">
+			<nav class="navbar navbar-default">
+			        <div class="container-fluid">
+			          <div class="navbar-header">
+			            <a class="navbar-brand" href="{{path('admin_dashboard')}}">212 Vip</a>
+			          </div>
+			          <div id="navbar" class="navbar-collapse collapse">
+			            <ul class="nav navbar-nav">
+			              <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Videos <span class="caret"></span></a>
+			                <ul class="dropdown-menu" role="menu">
+			                  <li><a href="{{path('_admin_new_videos_list')}}">New confirmed user's videos</a></li>
+			                  <li class="divider"></li>
+			                  <li><a href="{{path('_admin_all_videos')}}">All videos</a></li>
+			                  <li><a href="{{path('_admin_approved_videos_list')}}">Approved videos</a></li>
+			                  <li><a href="{{path('_admin_rejected_videos_list')}}">Rejected videos</a></li>
+			                  <li><a href="{{path('_admin_non_confirmed_videos_list')}}">Non confirmed videos</a></li>
+			                  <li class="divider"></li>
+			              	  <li><a href="{{path('_admin_add_video')}}">Test Add video</a></li>    
+			                </ul>
+			              </li>
+			              
+			              <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Stores<span class="caret"></span></a>
+			                <ul class="dropdown-menu" role="menu">
+			                  <li><a href="{{path('_admin_stores_list')}}">List stores</a></li>
+			                  <li class="divider"></li>
+			                  <li><a href="{{path('_admin_stores_new')}}">Add new store</a></li>
+			                  <li><a href="{{path('_admin_stores_search')}}">Search store</a></li>
+			                  <li class="divider"></li>
+			                  <li><a href="{{path('_admin_store_import_batch')}}">CSV import</a></li>
+			                  <li><a href="{{path('_admin_store_coordinates_batch', {'type':'complete'} )}}">Resolve all stores loc(batch)</a></li>
+			                  <li><a href="{{path('_admin_store_coordinates_batch', {'type':'partial'} )}}">Resolve only stores w/o loc(batch)</a></li>
+			                </ul>
+			              </li>
+			              
+			               <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Gifts<span class="caret"></span></a>
+			                <ul class="dropdown-menu" role="menu">
+			                  <li><a href="{{path('_admin_list_gifts')}}">List gifts</a></li>
+			                  <li class="divider"></li>
+			                  <li><a href="{{path('_admin_add_gift')}}">Add gift</a></li>
+			                </ul>
+			              </li>
+			              
+			              <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Users<span class="caret"></span></a>
+			                <ul class="dropdown-menu" role="menu">
+			              		<li><a href="{{path('_admin_list_users')}}">List users</a></li>
+			              		<li class="divider"></li>
+			              		<li><a href="{{path('_admin_user_add')}}">Test Add User</a></li>
+			              		<li><a href="{{path('_admin_user_login')}}">Test Login user</a></li>
+			              		<li><a href="{{path('_admin_user_test_mail')}}">Test email send</a></li>
+			              		<li class="divider"></li>
+			              		<li><a href="{{path('_admin_user_download')}}">Download CSV</a></li>
+			              	</ul>
+			              </li>
+			              
+			              <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Download codes<span class="caret"></span></a>
+			                <ul class="dropdown-menu" role="menu">
+			              		<li><a href="{{path('admin_audiodownloadcode')}}">List code</a></li>
+			              		<li class="divider"></li>
+			              		<li><a href="{{path('_admin_downloadcode_import')}}">Import codes</a></li>
+			              		<li><a href="{{path('_admin_assign_audio_code')}}">Assign code</a></li>
+			              	</ul>
+			              </li>
+			              
+			              <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Queues<span class="caret"></span></a>
+			                <ul class="dropdown-menu" role="menu">
+			                	<li><a href="{{path('_admin_queue_test_preview')}}">Test Asyncronous Generate Frame</a></li>	
+			                	<li><a href="{{path('_admin_queue_test_request_preview')}}">Test Request Generated Frame</a></li>
+			              		<li class="divider"></li>
+			              		<li><a href="{{path('_admin_queue_test_render_video')}}">Test Render Videos</a></li>
+			              		<li><a href="{{path('_admin_queue_request_rendered_video')}}">Test Get Rendered Video</a></li>
+			              		<li class="divider"></li>
+			              		<li><a href="{{path('_admin_queue_send_test')}}">Test Syncronous Job</a></li>
+			              		<li><a href="{{path('_admin_queue_send_test_background')}}">Test Slow operations Job</a></li>
+			              		<li><a href="{{path('_admin_queue_send_test_task')}}">Test parallel task synchronous</a></li>
+			              		
+			              	</ul>
+			              </li>
+			       
+			              <li class="dropdown">
+			                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Configuration<span class="caret"></span></a>
+			                <ul class="dropdown-menu" role="menu">
+			                  <li><a href="{{path('_admin_config_list')}}">Configuration parameters</a></li>
+			                </ul>
+			              </li>
+			              
+			            </ul>
+			            <ul class="nav navbar-nav navbar-right">
+			              <li><a>Hi, {{app.user.username}}</a></li>
+			              <li><a href="{{path('fos_user_security_logout')}}">Logout <span class="sr-only">(current)</span></a></li>
+			            </ul>
+			          </div><!--/.nav-collapse -->
+			        </div><!--/.container-fluid -->
+	      </nav>
+		</div>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

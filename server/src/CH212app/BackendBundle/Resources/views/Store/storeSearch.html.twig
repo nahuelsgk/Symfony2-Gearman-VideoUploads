@@ -1,0 +1,40 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<form action="{{ path('_admin_stores_search') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <input type="submit" />
+</form>
+</div>
+
+{% if position_requested_zip != '' and  position_requested_country != '' %}
+<div class="container">
+<h2>Results from origin: {{position_requested_zip}}, {{position_requested_country}}</h2>
+<table class="table table-condensed">
+<thead>
+<th>#</th>
+<th>Postcode</th>
+<th>Address</th>
+<th>Distance</th>
+</thead>
+<tbody>
+{% for store in stores %}
+<tr>
+<td>{{store.id}}</td>
+<td>{{store.postcode}}</td>
+<td>{{store.address}}</td>
+<td>{{store.distance}} km</td>
+</tr>
+{% endfor %}
+<tbody>
+</table>
+</div>
+{% endif %}
+{% endblock %}

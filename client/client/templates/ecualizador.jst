@@ -1,0 +1,27 @@
+<div class="col-xs-12 wrapper-text title-ecualizador">
+  <h2><strong><%= t3 %></strong></h2>
+  <p class="subtitle"><%= t4 %></p>
+</div>
+<div class="timeline ecualizador">
+  <div class="col-xs-2 controls clearfix">
+     <div class="switch-control">
+      <div class="timeline"><a href="/timeline"><%= t1 %></a></div>
+      <div class="swtich"><input type="checkbox" name="switch-control" checked data-on-text="" checked data-off-text=""></div>
+      <div class="ecualizador active"><a href="/ecualizador"><%= t2 %></a></div>
+    </div>
+     <span class="pull-right control-video video-<%= buttonState %>">
+      <img src="images/bot_timeline_<%= buttonState %>.svg" alt="Pause Video"/>
+     </span>
+  </div>
+  <div class="col-xs-10 line">
+    <div class="wrapper-timeline clearfix">
+      <div class="inner-timeline-base"></div>
+      <div class="inner-timeline"></div>
+    </div>
+    <div class="wrapper-sound-bars"></div>
+    <ul class="wrapper-participants"></ul>
+
+  </div>
+</div>
+
+

@@ -1,0 +1,166 @@
+<div class="container-blocks">
+  <div id="participate" class="block block-participate block-height">
+    <div class="content-block">
+        <h1><%=block1Title%></h1>
+        <p><%=block1Texto%></p>
+        <a class="btn btn-default btn-gold" data-bypass href="#m/signup" role="button"><%=block1Button%></a>
+    </div>
+  </div><div id="watch" class="block block-watch block-height-square video-buttons">
+    <div class="table">
+      <div class="table-cell">
+        <div class="button-play-container">
+            <img src="./images/mobile/play.svg" class="playsvg" alt="Play"/>
+        </div>
+         <h2><%=block2Title%></h2>
+      </div>
+    </div>
+  </div><div class="container-square"><div id="photographer" class="block block-photographer block-square video-buttons">
+  <div class="table">
+        <div class="table-cell">
+            <div class="button-play-container">
+                <img src="./images/mobile/play.svg" class="playsvg" alt="Play"/>
+            </div>
+            <h2><%=block3Title%></h2>
+        </div>
+      </div>
+  </div><div id="model" class="block block-model block-square video-buttons">
+    <div class="table">
+        <div class="table-cell">
+            <div class="button-play-container">
+                <img src="./images/mobile/play.svg" class="playsvg" alt="Play"/>
+            </div>
+           <h2><%=block4Title%></h2>
+        </div>
+    </div>
+  </div><div id="dancer" class="block block-dancer block-square video-buttons">
+      <div class="table">
+        <div class="table-cell">
+            <div class="button-play-container">
+                <img src="./images/mobile/play.svg" class="playsvg" alt="Play"/>
+            </div>
+            <h2><%=block5Title%></h2>
+        </div>
+      </div>
+  </div><div id="party" class="block block-party block-square video-buttons">
+    <div class="table">
+        <div class="table-cell">
+            <div class="button-play-container">
+                <img src="./images/mobile/play.svg" class="playsvg" alt="Play"/>
+            </div>
+           <h2><%=block6Title%></h2>
+        </div>
+    </div>
+  </div></div><div id="downloadAudio">
+    <div class="table content-block block-download-audio">
+      <div class="table-cell wrapper-download-mobile">
+        <% if(existSomeCode){ %><span>
+        <img src="images/desktop/download.svg" width="20px" height="20px">
+        <a class="download" href="m/download"><%= downloadNowText %></a>
+      </span><% } %>
+        <%= ifItWasentForYou %>
+      </div>
+    </div>
+  </div><div id="ean" class="block block-ean">
+    <div class="content-block">
+        <div class="ean-top">
+            <h2><%=block7Title%></h2>
+            <p><%=block7Texto%></p>
+            <a class="btn btn-default" data-bypass href="#m/vip" role="button"><%=block7Button1%></a>
+        </div><div class="ean-bottom">
+            <div class="container-image-bodegon">
+                <img src="./images/mobile/new_botles.png" alt="Products"/>
+            </div>
+            <a data-bypass class="btn btn-default btn-gold btn-bg-gold btn-descubre" href="<%=menuURL%>" target="_blank" role="button"><%=block7Button2%></a>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- POPUPS -->
+<div id="popup-watch" class="popups">
+    <div class="table">
+        <div class="table-cell">
+            <div class="container-close"><span class="closePopup"><img src="./images/mobile/close-menu.svg" alt="Close"/></span></div>
+            <div class="videoWrapper">
+                <video id="video-watch" width="320" height="240" controls>
+                  <source src="./data/CH_video_mobile.mp4" type="video/mp4">
+                  <source src="./data/CH_video.ogg" type="video/ogg">
+                  <source src="./data/CH_video_mobile.webm" type="video/webm">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup-photographer" class="popups">
+    <div class="table">
+        <div class="table-cell">
+            <div class="container-close"><span class="closePopup"><img src="./images/mobile/close-menu.svg" alt="Close"/></span></div>
+            <div class="videoWrapper">
+                <video id="video-photographer" width="320" height="240" controls>
+                  <source src="./data/CH_video_form1_mobile.mp4" type="video/mp4">
+                  <source src="./data/CH_video_form1.ogg" type="video/ogg">
+                  <source src="./data/CH_video_form1_mobile.webm" type="video/webm">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup-model" class="popups">
+    <div class="table">
+        <div class="table-cell">
+            <div class="container-close"><span class="closePopup"><img src="./images/mobile/close-menu.svg" alt="Close"/></span></div>
+            <div class="videoWrapper">
+                <video id="video-model" width="320" height="240" controls>
+                  <source src="./data/CH_video_form2_mobile.mp4" type="video/mp4">
+                  <source src="./data/CH_video_form2.ogg" type="video/ogg">
+                  <source src="./data/CH_video_form2_mobile.webm" type="video/webm">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup-dancer" class="popups">
+    <div class="table">
+        <div class="table-cell">
+            <div class="container-close"><span class="closePopup"><img src="./images/mobile/close-menu.svg" alt="Close"/></span></div>
+            <div class="videoWrapper">
+                <video id="video-dancer" width="320" height="240" controls>
+                  <source src="./data/CH_video_form3_mobile.mp4" type="video/mp4">
+                  <source src="./data/CH_video_form3.ogg" type="video/ogg">
+                  <source src="./data/CH_video_form3_mobile.webm" type="video/webm">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="popup-party" class="popups">
+    <div class="table">
+        <div class="table-cell">
+            <div class="container-close"><span class="closePopup"><img src="./images/mobile/close-menu.svg" alt="Close"/></span></div>
+            <div class="videoWrapper">
+                <video id="video-party" width="320" height="240" controls>
+                  <source src="./data/CH_video_form4_mobile.mp4" type="video/mp4">
+                  <source src="./data/CH_video_form4.ogg" type="video/ogg">
+                  <source src="./data/CH_video_form4_mobile.webm" type="video/webm">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+        var vid, idClicked;
+        $('.video-buttons').click(function(event){
+            event.preventDefault();
+            idClicked = $(this).attr('id');
+        });
+        $('.closePopup').click(function(event){
+            event.preventDefault();
+            $('#popup-'+idClicked).css('display','none');
+            $('.navbar-default').css('display', 'block');
+            $('#video-'+idClicked).get(0).pause();
+        });
+</script>

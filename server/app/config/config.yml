@@ -1,0 +1,177 @@
+imports:
+    - { resource: parameters.yml }
+    - { resource: security.yml }
+
+framework:
+    #esi:             ~
+    translator:      { fallback: en }
+    secret:          %secret%
+    router:
+        resource: "%kernel.root_dir%/config/routing.yml"
+        strict_requirements: %kernel.debug%
+    form:            ~
+    csrf_protection: ~
+    validation:      { enable_annotations: true }
+    templating:
+        engines: ['twig']
+        #assets_version: SomeVersionScheme
+    default_locale:  "%locale%"
+    trusted_proxies: ~
+    session:         ~
+    fragments:       ~
+
+# Twig Configuration
+twig:
+    debug:            %kernel.debug%
+    strict_variables: %kernel.debug%
+
+# Assetic Configuration
+assetic:
+    debug:          %kernel.debug%
+    use_controller: false
+    bundles:        [ ]
+    #java: /usr/bin/java
+    filters:
+        cssrewrite: ~
+        #closure:
+        #    jar: %kernel.root_dir%/Resources/java/compiler.jar
+        #yui_css:
+        #    jar: %kernel.root_dir%/Resources/java/yuicompressor-2.4.7.jar
+
+# Doctrine Configuration
+doctrine:
+    dbal:
+        driver:   %database_driver%
+        host:     %database_host%
+        port:     %database_port%
+        dbname:   %database_name%
+        user:     %database_user%
+        password: %database_password%
+        charset:  UTF8
+        mapping_types:
+            enum: string
+        # if using pdo_sqlite as your database driver, add the path in parameters.yml
+        # e.g. database_path: %kernel.root_dir%/data/data.db3
+        # path:     %database_path%
+
+    orm:
+        auto_generate_proxy_classes: %kernel.debug%
+        auto_mapping: true
+
+# Swiftmailer Configuration
+swiftmailer:
+    transport: %mailer_transport%
+    host:      %mailer_host%
+    username:  %mailer_user%
+    password:  %mailer_password%
+    spool:     { type: memory }
+
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: CH212app\BackendBundle\Entity\User
+
+knp_paginator:
+    page_range: 5                      # default page range used in pagination control
+    default_options:
+        page_name: page                # page query parameter name
+        sort_field_name: sort          # sort field query parameter name
+        sort_direction_name: direction # sort direction query parameter name
+        distinct: true                 # ensure distinct results, useful when ORM queries are using GROUP BY statements
+    template:
+        #pagination: KnpPaginatorBundle:Pagination:sliding.html.twig     # sliding pagination controls template
+        pagination: BackendBundle:Admin:paginator-bootstrap.html.twig
+        sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig # sort link template
+
+ivory_google_map:
+    geocoder:
+        # Enable the service
+        enabled: true
+
+        # Geocoder class
+        class: "Ivory\GoogleMap\Services\Geocoding\Geocoder"
+        provider:
+            # Fake IP
+            # If you set a fake IP, the parameter will replace the REMOTE_ADDR value by the given one
+            #fake_ip: "123.345.567.123"
+
+            # Provider class
+            class: "Ivory\GoogleMap\Services\Geocoding\GeocoderProvider"
+
+            # API key used by the provider
+            # If you set an API key, this paremeter will be the second parameter provider constructor
+            # By default, there is no api key ^_^
+            #api_key: "apikey"
+
+            # Locale used by the provider
+            # If your set a locale, this parameter will be the second parameter provider constructor if there is no api key else it will be the third
+            # By default, there is no locale
+            locale: "en"
+
+        # Adapter class
+        adapter: "Geocoder\HttpAdapter\BuzzHttpAdapter"
+doctrine_cache:
+    providers:
+        gearman_cache:
+            type: array
+            namespace: doctrine_cache.ns.gearman
+
+
+
+gearman:
+   bundles:
+      BackednBundle:
+          #Name Bundle
+          name: BackendBundle
+
+          #Bundle search can be enabled or disabled
+          active: true
+  
+          include:
+              - Workers 
+
+   # default values
+   # All these values will be used if are not overwritten in Workers or jobs
+   defaults:
+
+      # Default method related with all jobs
+      # do // deprecated as of pecl/gearman 1.0.0. Use doNormal
+      # doNormal
+      # doBackground
+      # doHigh
+      # doHighBackground
+      # doLow
+      # doLowBackground
+      method: doNormal
+
+      # Default number of executions before job dies.
+      # If annotations defined, will be overwritten
+      # If empty, 0 is defined by default
+      iterations: 150
+
+      # execute callbacks after operations using Kernel events
+      callbacks: true
+
+      # Prefix in all jobs
+      # If empty name will not be modified
+      # Useful for rename jobs in different environments
+      job_prefix: null
+
+      # Autogenerate unique key in jobs/tasks if not set
+      # This key is unique given a Job name and a payload serialized
+      generate_unique_key: true
+
+      # Prepend namespace when callableName is built
+      # By default this variable is set as true
+      workers_name_prepend_namespace: true
+
+   # Server list where workers and clients will connect to
+   # Each server must contain host and port
+   # If annotations defined, will be full overwritten
+   #
+   # If servers empty, simple localhost server is defined by default
+   # If port empty, 4730 is defined by efault
+   servers:
+      localhost:
+         host: 127.0.0.1
+         port: 4730

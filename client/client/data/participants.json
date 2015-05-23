@@ -1,0 +1,46 @@
+[
+  {
+    "id": "asddsgg234523",
+    "position": 5.6,
+    "name": "MARC LOPEZ",
+    "city": "MOSCU",
+    "date": "4/MAY/2015",
+    "isUser": false
+  },{
+    "id": "32423akjhdahsjd",
+    "position": 16.6,
+    "name": "IRINA SANTAKOVA",
+    "city": "MOSCU",
+    "date": "4/MAY/2015",
+    "isUser": false
+  },{
+    "id": "324asddjhdahsjd",
+    "position": 20.6,
+    "name": "MARIA SILVA",
+    "city": "RIO DE JANEIRO",
+    "date": "4/MAY/2015",
+    "isUser": false
+  },{
+    "id": "32423akhjljd",
+    "position": 30.6,
+    "name": "JOHN SMITH",
+    "city": "LONDON",
+    "date": "4/MAY/2015",
+    "isUser": false
+  },{
+    "id": "456456fghfgh",
+    "position": 40.6,
+    "name": "MARY EDWARDS",
+    "city": "NEW YORK",
+    "date": "4/MAY/2015",
+    "isUser": false
+  },{
+    "id": "3jkljkl6hdhsjd",
+    "position": 55,
+    "name": "CLAUDE JACQUIN",
+    "city": "PARIS",
+    "date": "4/MAY/2015",
+    "isUser": false
+  }
+
+]

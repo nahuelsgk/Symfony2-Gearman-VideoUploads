@@ -1,0 +1,71 @@
+{% extends '::admin_base.html.twig' %}
+
+{% block stylesheets %}
+{% endblock %}
+
+{% block body %}
+<div class="container">
+<h2>Store list: {{ pagination.getTotalItemCount }} stores</h2>
+<table class="table table-condensed">
+<thead>
+  <th>Id</th>
+  <th>Name</th>
+  <th>Address</th>
+  <th>Zipcode</th>
+  <th>Country</th>
+  <th>
+  	Longitud<br>
+  	Latitud
+  </th>
+  <th>Actions</th>
+<thead>
+{% for store in pagination %}
+<tr
+  {% if store.active == false %} class="danger"{% endif %}
+  {% if store.active == true %} 
+  	 {% if store.latitude == '' or store.longitud == '' %}
+  	 class="warning"
+  	 {% else %}
+  	 class="success"
+  	 {% endif %}
+  {% endif %}
+  
+>
+ <td>{{store.id}}</td>
+ <td>{{store.name}}</td>
+ <td>{{store.address}}</td>
+ <td>{{store.zipcode}}</td>
+ <td>{{store.country}}</td>
+ <td>
+   {{store.latitude}}<br>
+   {{store.longitud}}<br>
+   {% if store.latitude != '' and store.longitud != '' %} 
+   <a target="_blank" href="http://maps.google.com/maps?q={{store.latitude}},{{store.longitud}}">GMaps</a>
+   {% endif %}
+ </td>
+ <td>
+  {% if store.active == true %}
+  <a title="Reject" href="{{path('_admin_store_remove', {'store_id': store.id})}}" onClick="return confirmAction('You are about to delete disable this store. Do you want to continue?');">
+   	<span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+   </a>
+  {% endif %}
+  {% if store.active == false %}
+  <a title="Approve" href="{{path('_admin_store_enable', {'store_id': store.id})}}" onClick="return confirmAction('You are about to enable this store.Do you want to continue?');">
+  	 <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+   </a>
+  {% endif %}
+  | <a title="Edit" href="{{path('_admin_store_edit', {'store_id': store.id} ) }}">
+  	 <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+  </a> 
+  </td>
+  
+  
+</tr>
+{% endfor %}
+</table>
+{# display navigation #}
+<div class="navigation">
+    {{ knp_pagination_render(pagination) }}
+</div>
+</div>
+{% endblock %}

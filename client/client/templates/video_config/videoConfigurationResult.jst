@@ -1,0 +1,30 @@
+<div class="participate video-result participate-video">
+  <h2 class="col-xs-12 texto-espaciado"><%= title %></h2>
+  <h2 class="col-xs-12 texto-espaciado strong"><%= t1 %></h2>
+  <div class="wrapper-video-preview col-xs-12">
+    <% if (imgPreview) {%>
+      <img src="<%= imgPreview %>" alt="" class="blur img-preview 212"/>
+    <% } else {%>
+      <img src="images/desktop/cartela-212.jpg" alt="" class="img-preview 212"/>
+    <% }%>
+    <div class="loading-wrapper">
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 btnSendByEmail">
+    <a href="/timeline" class="btn btn-default"><%= sendByEmail %></a>
+  </div>
+  <div class="col-xs-12 shares-containers">
+    <div style="width:640px; margin:auto">
+      <div style="float: left" class="shares-boxes share-url"></div>
+      <div style="float: right" class="shares-boxes">
+        <div class="socials pull-right"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<%= sizmekCode %>

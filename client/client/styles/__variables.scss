@@ -1,0 +1,56 @@
+//Variables scss Files:
+
+//== Colors
+
+$golden-base    : #a67a12 !default;
+$golden-light   : lighten($golden-base, 13.5%) !default; // #222
+$golden-dark    : lighten($golden-base, 20%) !default; // #333
+
+$grey-base : #fff; // #EEE5D8  //#b0b0af
+$grey-base-2 : #b0b0af; //
+$grey-dark : #726964;
+$dark-base : #000000;
+$dark-base_alpha : rgba(0, 0, 0, 0.4);
+$dark-2 : #5e5e5e;
+$alert-base : #ff2200;
+$red-video-config :rgb(81,38,45);
+$transparent-grey : rgba($grey-base, .8);
+$transparent-grey-lite : rgba($grey-base, .4);
+
+//== font
+
+$standar-font-family : arial, helvetica, sans-serif;
+$base-font-family : 'Helvetica W01 Light Cn';
+$normal-font-family : 'Helvetica W01 Cn';
+$strong-font-family : 'Helvetica W01 Bd Cn';
+$bold-neue-font : 'HelveticaNeueLTStd-BdCn';
+$light-neue-font : 'HelveticaNeueLTStd-LtCn';
+$condensed-neue-font : 'HelveticaNeueLTStdCn';
+$medium-neue-font : 'HelveticaNeueLTStd-MdCn';
+
+$base-font-size   : 14px;
+$nav-font-size   : 12px;
+$title-font-size   : 48px;
+$title-font-size-lite   : 48px;
+$subtitle-font-size   : 22px;
+
+//== base
+
+$page_padding : 30px;
+$border-radius : 7px;
+
+//== TimeLine
+
+$timeline-full-line-height : 1px;
+$timeline-empty-line-height : 1px;
+
+//Social Icons
+
+$social-icon-height: 50px;
+$social-icon-width: 35px;
+
+
+
+
+
+

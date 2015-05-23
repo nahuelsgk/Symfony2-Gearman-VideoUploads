@@ -1,0 +1,26 @@
+<div class="container-content container-content-upload">
+  <h1><strong><%= title %></strong></h1>
+  <p class="upload-text"><%= p1 %></p>
+  <p class="upload-text"><%= p2 %></p>
+  <div class="wrapper-drag-zone">
+    <div class="drag-zone">
+      <button id="participate" type="button" class="btn btn-default select-file"><%= b1 %></button>
+      <p class="error-upload"></p>
+      <input class="hidden" id="fileInput" type="file" name="fileInput" accept="video/*">
+    </div>
+    <div class="wrapper-loading onload">
+      <p class="loading-text"></p>
+      <div class="loading-video">
+        <div class="loading-video-bar"></div>
+      </div>
+    </div>
+    <p class="video-requeriment"><%= p4 %></p>
+    <div class="legal-terms loaded">
+      <button href="/participate" class="btn btn-default upload-video-button send"><%= b2 %></button>
+    </div>
+  </div>
+  <div class="navFB">
+    <%= fb %>
+  </div>
+
+</div>
